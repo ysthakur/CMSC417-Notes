@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "-file:Review -file:README",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:ML  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:Stats",
+      "color": {
+        "a": 1,
+        "rgb": 1943323
+      }
+    },
+    {
+      "query": "path:\"Data Science\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 1920215
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 0.797817047817048,
+  "lineSizeMultiplier": 0.818191268191268,
+  "collapse-forces": false,
+  "centerStrength": 0.404365904365904,
+  "repelStrength": 7.67151767151767,
+  "linkStrength": 0.799376299376299,
+  "linkDistance": 75,
+  "scale": 0.8814265637106395,
+  "close": true
+}

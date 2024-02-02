@@ -1,0 +1,2 @@
+- TODO see slides
+- Shared wireless access networks connects end system

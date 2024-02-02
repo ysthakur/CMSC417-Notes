@@ -1,0 +1,15 @@
+Internet protocol stack:
+- Application: supporting network applications
+	- FTP, SMTP, HTTP
+- Presentation layer: data formats, data encryption
+	- Considered part of transport layer
+- Session layer
+	- Also considered part of transport layer
+- Transport: process-process data transfer
+	- TCP, UDP
+- Network: routing of packets from source to destination
+	- IP, routing protocols
+	- Ensures data delivery
+- Link: data transfer between neighboring network elements
+	- Ethernet, 802.11 (WiFi), PPP
+- Physical: bits on the wire

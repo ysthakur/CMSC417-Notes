@@ -1,0 +1,2 @@
+- Bandwidth is the capacity at a particular point
+- Throughput is the reality, the rate at which data is actually transmitted

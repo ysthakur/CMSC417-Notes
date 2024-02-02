@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "type": "graph",
+      "ctime": 1699201603573,
+      "title": "Graph view",
+      "options": {
+        "collapse-filter": true,
+        "search": "",
+        "showTags": false,
+        "showAttachments": false,
+        "hideUnresolved": false,
+        "showOrphans": true,
+        "collapse-color-groups": true,
+        "colorGroups": [
+          {
+            "query": "path:\"Machine Learning\"  ",
+            "color": {
+              "a": 1,
+              "rgb": 14048348
+            }
+          },
+          {
+            "query": "path:Stats",
+            "color": {
+              "a": 1,
+              "rgb": 1943323
+            }
+          },
+          {
+            "query": "path:\"Data Science\"  ",
+            "color": {
+              "a": 1,
+              "rgb": 1920215
+            }
+          }
+        ],
+        "collapse-display": true,
+        "showArrow": false,
+        "textFadeMultiplier": 0,
+        "nodeSizeMultiplier": 1,
+        "lineSizeMultiplier": 1,
+        "collapse-forces": false,
+        "centerStrength": 0.518713248970312,
+        "repelStrength": 10,
+        "linkStrength": 0.811850311850312,
+        "linkDistance": 250,
+        "scale": 1,
+        "close": true
+      }
+    }
+  ]
+}
