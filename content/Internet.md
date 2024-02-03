@@ -1,6 +1,6 @@
 - _An_ internet is a network of networks
 - _The_ Internet is the one that spans the world
-- The Internet is a [[content/Distributed Network]]
+- The Internet is a [distributed network](Distributed%20Network.md)
 
 - What is the internet? A service view:
       -  It's an infrastructure that provides services to applications: web, VoIP, email, social nets, etc.
@@ -18,4 +18,3 @@
     - TODO missed stuff
     - Option: connect access ISP to one global transit ISP?
     - Customer and provider ISPs have economic agreement
-    

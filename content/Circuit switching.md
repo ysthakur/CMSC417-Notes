@@ -1,8 +1,6 @@
-- TODO see slides to figure out what this means: end-end resources allocated to, reserved for "call" between source and destination
+- End-to-end resources allocated to and reserved for "calls" between source and destination
+	- Commonly used in traditional telephone networks
 - Make a physical circuit between transmitter and receiver
-- Commonly used in traditional telephone networks
-
-![circuit switching](circuit%20switching.png)
 
 Pros:
 - Circuit-like performance
@@ -13,3 +11,5 @@ Cons:
 - Circuit segment idle if there is not enough data
 
 So this is not appropriate for the Internet
+
+![circuit switching](circuit%20switching.png)
