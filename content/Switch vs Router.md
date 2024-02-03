@@ -1,0 +1,1 @@
+![](switch-vs-router.png)
