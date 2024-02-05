@@ -1,1 +1,1 @@
-![](switch-vs-router.png)
+![Switches vs Routers](img/switch-vs-router.png)

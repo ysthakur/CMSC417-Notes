@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "-file:Review -file:README",
+  "search": "-file:index",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -35,10 +35,10 @@
   "nodeSizeMultiplier": 0.797817047817048,
   "lineSizeMultiplier": 0.818191268191268,
   "collapse-forces": false,
-  "centerStrength": 0.404365904365904,
+  "centerStrength": 0.433471933471933,
   "repelStrength": 7.67151767151767,
   "linkStrength": 0.799376299376299,
   "linkDistance": 75,
   "scale": 0.8814265637106395,
-  "close": true
+  "close": false
 }

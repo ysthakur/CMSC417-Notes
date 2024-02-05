@@ -1,8 +1,8 @@
 {
   "accentColor": "#3460e5",
   "theme": "system",
-  "monospaceFontFamily": "MesloLGL Nerd Font Mono",
-  "textFontFamily": "Cascadia Mono",
+  "monospaceFontFamily": "MesloLGL Nerd Font Mono,IosevkaTerm Nerd Font Mono",
+  "textFontFamily": "DroidSansM Nerd Font Mono",
   "translucency": false,
   "cssTheme": "Solarized"
 }

@@ -1,0 +1,8 @@
+- Hosts: clients and servers
+- Servers often in data centers
+- Access networks, physical media: wired, wireless communication links
+	- [Home Networks](Home%20Networks.md)
+	- [Ethernet](Protocols/Ethernet.md) (Enterprise access networks)
+	- [WANs](WANs.md)
+
+![Network edge](img/network-edge.png)

@@ -12,4 +12,4 @@ Cons:
 
 So this is not appropriate for the Internet
 
-![circuit switching](circuit%20switching.png)
+![circuit switching](img/circuit%20switching.png)

@@ -1,5 +1,5 @@
 - One possible topology:
-    - Point-to-point (P2P) connections
+    - Point-to-point ([P2P](Protocols/PPP.md)) connections
         - Every computer is connected directly to every other computer
         - Problem: Not scalable
 - Solutions:
@@ -11,4 +11,4 @@
         - Shared channel, not totally centralized
         - This is what the [[Internet]] uses
         - To make sure every computer gets its chance to use the network, uses [[Switching]]
-        - ![](multiple_access.png)
+        - ![Multiple access](img/multiple_access.png)

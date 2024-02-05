@@ -7,4 +7,4 @@
 - If there's no controller to monitor what's going on and one of the computers involved stops following the protocol, then
     - that malfunctioning computer's messages may just be discarded
     - but it may disrupt other computers' communications
-- Want to set up protocols so they discourage bad behavior/protect other computers from bad computers
+- So you want to set up protocols so they discourage bad behavior/protect other computers from bad computers
