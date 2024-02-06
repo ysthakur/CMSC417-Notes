@@ -7,6 +7,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     baseUrl: "ysthakur.github.io/CMSC417-Notes/",
+    locale: "en-US",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
