@@ -26,4 +26,4 @@ But such a static approach has shortcomings:
 Solution: use a distributed and dynamic protocol
 Two main classes of protocols:
 1. [Distance Vector Routing](Distance%20Vector%20Routing.md)
-2. Link state
+2. [Link State Routing](Link%20State%20Routing)
