@@ -1,3 +1,5 @@
+Less likely to have loops than [Distance Vector Routing](Distance%20Vector%20Routing.md) (but loops still possible)
+
 Strategy:
 - Send to all nodes (not just neighbors) information about neighbors (not connection to all nodes)
 - All nodes will know the link-state information of all other nodes
@@ -10,6 +12,8 @@ Link State Packet (LSP) contains:
 4. A Time-To-Live (TTL) for this packet
 	- To make sure old information is eventually removed from the network
 	- Can use hops rather than time
+
+One link state routing protocol (implementation?) is [Open Shortest Path First (OSPF)](OSPF)
 
 ## Reliable flooding
 
@@ -27,7 +31,21 @@ Goals:
 
 1. Store most recent LSP from each node
 	- Knows which one is most recent based on sequence number
-2. Forward LSP to all nodes except the one that sent it
-3. Generate new LSP periodically; increment SEQNO
-4. Start SEQNO at 0 when reboot
+	- If get two identical copies, accept the one that came first
+1. Forward LSP to all nodes except the one that sent it
+2. Generate new LSP periodically; increment SEQNO
+3. Start SEQNO at 0 when reboot
 	- Can't maintain state to pick up at the previous SEQNO
+4. Decrement TTL before flooding it to neighbors
+	- Also age the stored LSP (decrement TTL)
+	- Discard when TTL hits 0
+
+## LSP processing flow
+
+- When you get a new LSP, flood before adding to database and processing
+- This is because you want to make sure the other nodes get the LSP as soon as possible
+	- Processing takes time
+- For shortest path routing, in practice, each switch computes its routing table directly from the LSPs it has collected using a realization of Dijkstra's algorithm called the [forward search algorithm](Forward%20search%20algorithm)
+
+
+![LSP processing flowchart](img/link-state-routing-flowchart.png)

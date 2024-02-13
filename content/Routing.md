@@ -27,3 +27,13 @@ Solution: use a distributed and dynamic protocol
 Two main classes of protocols:
 1. [Distance Vector Routing](Distance%20Vector%20Routing.md)
 2. [Link State Routing](Link%20State%20Routing)
+
+### Link State Routing vs Distance Vector Routing
+
+Link state routing is preferred for social networks
+
+|  | LS | DV |
+| ---- | ---- | ---- |
+| Message complexity | With n nodes and E links, $O(nE)$ messages sent | Exchange between neighbors only |
+| Speed of convergence | - $O(n^2)$ algorithm requires $O(nE)$ messages<br>- May have oscillations | - Convergence time varies<br>- May be routing loops<br>- Count-to-infinity problem |
+| Robustness | - Node can advertise incorrect *link* cost<br>- Each node computes only its own table | - DV node can advertise incorrect path cost<br>- Each node's table used by others, so errors propagate through network<br> |
