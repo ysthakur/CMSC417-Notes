@@ -5,13 +5,20 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:Protocols  ",
+      "query": "path:\"OSI layers\"  ",
       "color": {
         "a": 1,
-        "rgb": 1920215
+        "rgb": 14168083
+      }
+    },
+    {
+      "query": "tag:#protocol  ",
+      "color": {
+        "a": 1,
+        "rgb": 1779397
       }
     }
   ],

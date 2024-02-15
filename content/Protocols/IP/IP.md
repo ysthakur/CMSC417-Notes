@@ -1,11 +1,13 @@
 ---
 aliases:
   - Internet Protocol
+tags:
+  - protocol
 ---
 - IP = Internet Protocol
 - Runs on all the nodes in a collection of networks and defines the infrastructure that allows these nodes and networks to function as a single logical internetwork
 
-![IP hourglass](../img/ip-hourglass.png)
+![IP hourglass](../../img/ip-hourglass.png)
 
 ## IP Service Model
 
@@ -28,7 +30,9 @@ aliases:
 - It only has a checksum for the header (not the data) because it only cares about the header
 	- Higher level protocols will deal with the data
 
-![IP datagram format](../img/ip-datagram-format.png)
+![IP datagram format](../../img/ip-datagram-format.png)
+
+- IP doesn't have a separate data length field, you can calculate it with packet length - header length
 
 ## IP Fragmentation and Reassembly
 
@@ -38,3 +42,15 @@ aliases:
 	- Larger packets occupy a link for longer
 - If packet length is bigger than some router's MTU, need to fragment it
 - Packets get reassembled at destination
+- 16-bit identifier is used to reassemble them
+	- Packets may have duplicate identifiers
+	- To help with this, 2-minute time limit used initially
+	- But this may not be enough with large networks
+	- Deduplication: if router sees duplicate packets, it will discard them
+- Flags (see "flgs" in the diagram above):
+	- DF (Don't Fragment): When set to 1, drops the packet instead of fragmenting if size over MTU
+		- ==TODO when is this useful?==
+	- MF (More Fragments): When set to 1, indicates that more fragments of the packet are to come
+- Fragment offset (see diagram above):
+	- Identifies fragment location relative to beginning of unfragmented data
+	- Fragments are counted in units of 8 octets (8-byte blocks)

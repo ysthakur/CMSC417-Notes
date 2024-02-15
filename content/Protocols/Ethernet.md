@@ -2,6 +2,8 @@
 aliases:
   - Ethernet
   - Enterprise access networks
+tags:
+  - protocol
 ---
 # Enterprise Access Networks (Ethernet)
 
