@@ -1,6 +1,6 @@
 {
-  "collapse-filter": false,
-  "search": "-file:index",
+  "collapse-filter": true,
+  "search": "-file:index -path:Review",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -20,17 +20,24 @@
         "a": 1,
         "rgb": 1779397
       }
+    },
+    {
+      "query": "path:Routing  ",
+      "color": {
+        "a": 1,
+        "rgb": 2212924
+      }
     }
   ],
   "collapse-display": true,
   "showArrow": true,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 0.797817047817048,
-  "lineSizeMultiplier": 2.22401247401247,
+  "lineSizeMultiplier": 1.47016632016632,
   "collapse-forces": false,
-  "centerStrength": 0.396049896049896,
+  "centerStrength": 0.445945945945946,
   "repelStrength": 7.42203742203742,
-  "linkStrength": 0.346153846153846,
+  "linkStrength": 0.321205821205821,
   "linkDistance": 75,
   "scale": 0.8814265637106395,
   "close": false

@@ -8,7 +8,7 @@ Routing protocol goal: Determine "good" paths (routes) from sending host to rece
 - Can treat routers as graphs
 	- Nodes are routers
 	- Edges are links between routers
-- [Routing algorithms](Routing%20algorithms) find the least cost path between two points
+- Routing algorithms find the least cost path between two points
 
 
 > [!note]
@@ -25,8 +25,8 @@ But such a static approach has shortcomings:
 
 Solution: use a distributed and dynamic protocol
 Two main classes of protocols:
-1. [Distance Vector Routing](Distance%20Vector%20Routing.md)
-2. [Link State Routing](Link%20State%20Routing)
+1. [Distance Vector Routing](Routing/Distance%20Vector%20Routing.md)
+2. [Link State Routing](Routing/Link%20State%20Routing.md)
 
 ### Link State Routing vs Distance Vector Routing
 

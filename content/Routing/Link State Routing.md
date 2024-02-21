@@ -1,4 +1,4 @@
-Less likely to have loops than [Distance Vector Routing](Distance%20Vector%20Routing.md) (but loops still possible)
+Less likely to have loops than [Distance Vector Routing](Routing/Distance%20Vector%20Routing.md) (but loops still possible)
 
 Strategy:
 - Send to all nodes (not just neighbors) information about neighbors (not connection to all nodes)
@@ -45,7 +45,7 @@ Goals:
 - When you get a new LSP, flood before adding to database and processing
 - This is because you want to make sure the other nodes get the LSP as soon as possible
 	- Processing takes time
-- For shortest path routing, in practice, each switch computes its routing table directly from the LSPs it has collected using a realization of Dijkstra's algorithm called the [forward search algorithm](Forward%20search%20algorithm)
+- For shortest path routing, in practice, each switch computes its routing table directly from the LSPs it has collected using a realization of Dijkstra's algorithm called the [forward search algorithm](Forward%20search%20algorithm.md)
 
 
 ![LSP processing flowchart](img/link-state-routing-flowchart.png)

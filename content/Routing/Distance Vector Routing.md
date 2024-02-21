@@ -79,7 +79,7 @@ If the link cost *increases*, that can be problematic:
 
 Some solutions to count-to-infinity problem:
 1. Have a small number for infinity, so at least it stops at some point
-	- In the [Routing Information Protocol](Routing%20Information%20Protocol), the max number of hops is typically 15 or 16
+	- In the [Routing Information Protocol](Routing%20Information%20Protocol.md), the max number of hops is typically 15 or 16
 	- If a network is more than 15 hops away, it is considered unreachable
 	- This may work for smaller networks, but not larger networks
 2. Split horizon
@@ -88,7 +88,9 @@ Some solutions to count-to-infinity problem:
 	- When a route sends a routing update to its neighbors, it does not send the routes it learned from each neighbor back to that neighbor
 	- So in the example above, since Z has route (X, 5, Y) in its table, it won't send (X, 5) to Y because the distance 5 route to X passes through Y
 3. Poison reverse - stronger version of split horizon
-	- Advertise a bad route (set cost to infinity)
+	- Advertise a bad route (set cost to infinity) rather than merely omit route
+	- Cons:
+		- Can significantly increase size of routing announcements
 
 ## Limitations
 
@@ -96,4 +98,3 @@ Some solutions to count-to-infinity problem:
 - Possibility of routing loops
 - Has static and pre-determined link costs
 	- Link costs can actually change after the network starts up
-
