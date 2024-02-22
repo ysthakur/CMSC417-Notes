@@ -1,4 +1,8 @@
-# Wireless Access Networks
+---
+aliases:
+  - Wireless Access Network
+---
+WAN = Wireless Access Network
 
 - Shared wireless access network connects end system to router
 	- via base station, aka "access point"

@@ -1,4 +1,4 @@
-# Access Networks: Home Networks
+Home networks are a kind of access network
 
 ![Home network](img/home-network1.png)
 

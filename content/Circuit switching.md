@@ -10,6 +10,6 @@ Cons:
   - This is a deal-breaker
 - Circuit segment idle if there is not enough data
 
-So this is not appropriate for the Internet
+So this is not appropriate for the Internet - we use [Packet switching](Packet%20switching.md) instead
 
 ![circuit switching](img/circuit%20switching.png)

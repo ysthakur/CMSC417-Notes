@@ -1,1 +1,0 @@
-Don't need to get permission from a controller to become part of a network

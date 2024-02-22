@@ -1,3 +1,7 @@
+---
+aliases:
+  - Latency
+---
 Four sources of delay if you use [packet switching](Packet%20switching.md):
 - **Transmission delay**: How fast the router can send data to the network
 	- Transmission delay = L/R, where L is packet length (bits) and R is bandwidth (bits per second)
@@ -13,7 +17,7 @@ Four sources of delay if you use [packet switching](Packet%20switching.md):
 	- d = length of physical link
 	- v = propagation speed
 
-> [!warn]
+> [!warning]
 > Transmission delay and propagation delay are *very* different, don't confuse the two.
 
 ![Sources of delay](img/delay-sources.png)

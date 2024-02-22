@@ -1,6 +1,7 @@
 - Hosts: clients and servers
 - Servers often in data centers
 - Access networks, physical media: wired, wireless communication links
+- Kinds of access networks:
 	- [Home Networks](Home%20Networks.md)
 	- [Ethernet](Protocols/Ethernet.md) (Enterprise access networks)
 	- [WANs](WANs.md)

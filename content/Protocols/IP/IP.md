@@ -34,6 +34,11 @@ tags:
 
 - IP doesn't have a separate data length field, you can calculate it with packet length - header length
 
+Header checksum:
+- Tells you if there was any corruption
+- Only checksum of header because up to lower layers to handle corruption of data
+- Works by treating the header as 16-bit words, adding them up, and taking one's complement of that
+
 ## IP Fragmentation and Reassembly
 
 - **Maximum Transmission Unit (MTU)** - Maximum length of packet
@@ -42,15 +47,18 @@ tags:
 	- Larger packets occupy a link for longer
 - If packet length is bigger than some router's MTU, need to fragment it
 - Packets get reassembled at destination
-- 16-bit identifier is used to reassemble them
+- 16-bit identifier is used to reassemble them (`Ident` field)
 	- Packets may have duplicate identifiers
 	- To help with this, 2-minute time limit used initially
 	- But this may not be enough with large networks
 	- Deduplication: if router sees duplicate packets, it will discard them
 - Flags (see "flgs" in the diagram above):
-	- DF (Don't Fragment): When set to 1, drops the packet instead of fragmenting if size over MTU
+	- `DF` (Don't Fragment): When set to 1, drops the packet instead of fragmenting if size over MTU
 		- ==TODO when is this useful?==
-	- MF (More Fragments): When set to 1, indicates that more fragments of the packet are to come
+	- `MF` (More Fragments): When set to 1, indicates that more fragments of the packet are to come
 - Fragment offset (see diagram above):
 	- Identifies fragment location relative to beginning of unfragmented data
 	- Fragments are counted in units of 8 octets (8-byte blocks)
+	- This allows fragmenting fragments further (fragment index alone would not)
+- If not all of the fragments arrive, host discards even the fragments that did arrive
+	- IP does not bother recovering from missing fragments

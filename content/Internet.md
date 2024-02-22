@@ -1,6 +1,6 @@
 - _An_ internet is a network of networks
 - _The_ Internet is the one that spans the world
-- The Internet is a [distributed network](Distributed%20Network.md)
+- The Internet is a distributed network - don't need to get permission from a controller to become part of a network
 
 - What is the internet? A service view:
       -  It's an infrastructure that provides services to applications: web, VoIP, email, social nets, etc.
@@ -11,7 +11,7 @@
 
 - All communication activity on the Internet is governed by [[Protocol]]s
 
-- TODO see slides, missed some stuff here
+- ==TODO see slides, missed some stuff here==
 
 ## Internet structure: network of networks
 
@@ -23,6 +23,7 @@
  ![Interconnected ISPs](img/interconnected-ISPs.png)
 
 On top of that, there are are regional networks to connect access nets to ISPs
+
 ![Regional nets](img/regional-nets.png)
 
 On top of *that*, content provider networks such as Google and Microsoft may run their own networks to bring services and content closer to end users
@@ -32,7 +33,6 @@ On top of *that*, content provider networks such as Google and Microsoft may run
 At the center are a few well-connected large networks
 - Tier-1 commercial ISPs (e.g. Spring, AT&T), national and international coverage
 - Content provider/distribution network (e.g. Google, Akamai): private network that connects its data centers to Internet, often bypassing tier-1 regional ISPs
-
 
 ## Internet network layer
 

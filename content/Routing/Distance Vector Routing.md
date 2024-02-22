@@ -91,6 +91,7 @@ Some solutions to count-to-infinity problem:
 	- Advertise a bad route (set cost to infinity) rather than merely omit route
 	- Cons:
 		- Can significantly increase size of routing announcements
+	- PDF explaining difference between split horizon and poison reverse: https://www.cs.umd.edu/class/spring2024/cmsc417/course_materials/slides/4_DV_routingExamples.pdf
 
 ## Limitations
 

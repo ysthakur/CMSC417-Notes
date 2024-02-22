@@ -17,3 +17,11 @@ In the olden days, only fixed allocation sizes:
 | E | 11110 | - | - | Reserved for future use |
 
 This is why people use dotted-quad notation
+
+## Problems with Classful Addressing
+
+1. Wastage of addresses
+2. Bigger tables to look up at routers
+
+Enter [Classless Inter-Domain Routing (CIDR)](CIDR.md)
+

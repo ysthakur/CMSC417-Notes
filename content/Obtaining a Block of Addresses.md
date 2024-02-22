@@ -1,0 +1,8 @@
+- Internet Corporation for Assigned Names and Numbers (ICANN)
+	- Allocates large blocks to Regional Internet Registries
+- Regional Internet Registries (RIRs)
+	- E.g., ARIN (American Registry for Internet Numbers)
+	- Allocates to ISPs and large institutions
+- Internet Service Providers (ISPs)
+	- Allocate address blocks to their customers
+	- Who may, in turn, allocate to their customers...

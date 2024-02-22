@@ -5,7 +5,7 @@ Hosts break application-layer messages into [packets](Packet.md) (this is [packe
 - Each packet transmitted at full link capacity
 
 Two key network core functions:
-- **Routing**: Determines source-to-destination route taken by packets
+- [**Routing**](Routing/Routing.md): Determines source-to-destination route taken by packets
 - **Forwarding**: Move packets from router's input to appropriate router output
 
 Around the network core is the [network edge](Network%20edge.md)

@@ -4,7 +4,8 @@
 - Everyone should have a chance to send their packets
 	- Can do round-robin scheduling
 
-**Store and forward**: Entire packet must arrive at router before it can be transmitted on next link
+**Store and forward**: Entire packet must arrive at router (stored in internal memory) before it can be transmitted on next link
+- [Circuit switching](Circuit%20switching.md) doesn't do this, it just directly forwards bits
 
 However, introduces [delays](Delay.md) that weren't present in [circuit switching](Circuit%20switching.md)
 
