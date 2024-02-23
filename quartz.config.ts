@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "CMSC320 Notes",
+    pageTitle: "CMSC417 Notes",
     enableSPA: true,
     enablePopovers: true,
     baseUrl: "ysthakur.github.io/CMSC417-Notes/",
