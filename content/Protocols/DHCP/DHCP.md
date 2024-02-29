@@ -11,6 +11,11 @@ aliases:
 	- Can renew lease on address in use
 - Support for mobile users who want to join network
 
+In addition to [IP Address](IP/IP%20Addresses.md), also returns:
+- Address of first-hop router for client
+- Name and IP address of DNS server
+- Network mask (to indicate network vs host portion of address)
+
 Steps:
 1. Client sends DHCP discover packet
 2. DHCP server sends DHCP offer
@@ -18,4 +23,9 @@ Steps:
 4. DHCP server sends DHCP ACK
 
 All of these steps are done on broadcast address so that all computers on network know about the new guy
- ![DHCP](../img/dhcp.png)
+ ![DHCP](../../img/dhcp.png)
+
+- DHCP server maintains pool of available addresses
+- There is at least one DHCP server for an administrative domain (a server or relay agent per subnet)
+
+![DHCP Relay](DHCP%20Relay.md)

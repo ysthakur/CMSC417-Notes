@@ -1,3 +1,7 @@
+---
+aliases:
+  - IP Address
+---
 
 [IP](Protocols/IP/IP.md) Addresses (IPv4):
 - A unique 32-bit number
