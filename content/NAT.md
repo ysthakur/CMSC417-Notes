@@ -3,13 +3,14 @@ aliases:
   - Network Address Translation
 ---
 NAT (Network Address Translation)
-- You get a private [IP address](IP%20Addresses.md) within your network
+- You get a private [IP address](IP/IP%20Addresses.md) within your network
 - Rest of the world only sees your router's IP address
 - All datagrams leaving local network have same single source NAT IP address
 - *But* different source port numbers
 
 Works using NAT translation table:
 - Each row has WAN side address and corresponding LAN side address
+- Unlike [ARP](ARP.md), entries don't have TTL because ==TODO find out why==
 
 NAT implementations must:
 - Replace outgoing datagrams

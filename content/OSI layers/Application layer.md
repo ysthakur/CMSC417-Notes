@@ -1,2 +1,2 @@
 - Standardize common types of exchanges
-- e.g. [FTP](../Protocols/FTP.md), [SMTP](../Protocols/SMTP.md), [HTTP](../Protocols/HTTP.md)
+- e.g. [FTP](../FTP.md), [SMTP](../SMTP.md), [HTTP](../HTTP.md)

@@ -2,7 +2,7 @@ Global addresses:
 - Properties:
 	- Globally unique
 	- Hierarchical: network + host
-	- 4 billion [IP](Protocols/IP/IP.md) addresses, half are A type, 1/4 are B type, 1/8 are C type
+	- 4 billion [IP](IP.md) addresses, half are A type, 1/4 are B type, 1/8 are C type
 
 ![Global address format](img/global-address-format.png)
 

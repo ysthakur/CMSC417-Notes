@@ -3,7 +3,7 @@ aliases:
   - IP Address
 ---
 
-[IP](Protocols/IP/IP.md) Addresses (IPv4):
+[IP](IP.md) Addresses (IPv4):
 - A unique 32-bit number
 - Identifies an interface
 - Represented in dotted-quad notation
