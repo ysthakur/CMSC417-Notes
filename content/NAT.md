@@ -10,7 +10,8 @@ NAT (Network Address Translation)
 
 Works using NAT translation table:
 - Each row has WAN side address and corresponding LAN side address
-- Unlike [ARP](ARP.md), entries don't have TTL because ==TODO find out why==
+- Unlike [ARP](ARP.md), entries don't have TTL because NAT has no idea how long it takes for each client to communicate with the DHCP server
+	- ==TODO confirm this==
 
 NAT implementations must:
 - Replace outgoing datagrams
