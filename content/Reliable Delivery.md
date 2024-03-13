@@ -1,3 +1,6 @@
+
+What [TCP](TCP.md) does
+
 Challenges of reliable data transfer:
 - Over a channel with bit errors:
 	- Receiver detects errors and requests transmission
@@ -9,12 +12,21 @@ Challenges of reliable data transfer:
 
 Retransmission hints:
 - Acknowledgments from receiver
-	- Positive: ACK
-	- Negative: NACK
+	- Positive: ACK (uh-huh, I heard you)
+	- Negative: NACK (please repeat that)
 - Sender retransmits
 	- After *not* receiving an ACK
-	- After receiving a NACK
+	- Or after receiving a NACK
 - Timeout by sender
 	- Don't wait forever without some acknowledgment
 
-[TCP](TCP.md)
+- Detects bit errors with checksum
+	- If receiver detects corrupt data, requests retransmission
+- Detects missing data with sequence number
+	- Used to detect a gap in the stream of bytes
+	- And for putting data back in order
+- Recover from lost data: retransmission
+	- Sender retransmits lost or corrupted data
+	- 2 main ways to detect lost packets
+
+[Automatic Repeat reQuest (ARQ)](ARQ.md)
