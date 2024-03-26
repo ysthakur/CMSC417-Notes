@@ -65,7 +65,20 @@ URG (urgent):
 - Urgent pointer tells the receiver that the data there is important
 - Used in TELNET but not used much outside of that
 
+## Calculating TCP timeout
+
+Estimate round-trip time (RTT): $\text{EstimatedRTT} = \alpha \cdot \text{EstimatedRTT} + (1 - \alpha) \cdot \text{SampleRTT}$
+
+$\text{Timeout} = 2 \cdot \text{EstimatedRTT}$ (double to be conservative)
+
+- RTT estimation can be wrong
+- Solution: Karn/Partridge algorithm
+	1. Stop taking RTT samples when TCP retransmits
+	2. Start again after a regular transmission/reception
+	3. Each time TCP retransmits, set next timeout to be twice the last timeout value
+- Problem with Karn/Partridge with rules #1 and #2
+	- ??? ==TODO google==
+
 ## Header
 
 ![TCP Header](img/tcp-header.png)
-

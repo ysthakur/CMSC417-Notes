@@ -1,5 +1,5 @@
 - Process-to-process data channel
-- e.g. [TCP](TCP), [UDP](UDP)
+- e.g. [TCP](../TCP/TCP.md), [UDP](UDP)
 - Unit of data exchanged in this layer is called a [Message](../Message.md)
 
 The [Session layer](Session%20layer.md) and [Presentation layer](Presentation%20layer.md) can be considered part of this layer
@@ -43,7 +43,7 @@ Also known as mux/demux
 > [!note]
 > IP datagrams with different source IP addresses and/or source port numbers are still directed to the same socket
 
-#### Connection-orented mux/demux ([TCP](TCP))
+#### Connection-orented mux/demux ([TCP](../TCP/TCP.md))
 
 - TCP socket identified by 4-tuple
 	- Source IP address

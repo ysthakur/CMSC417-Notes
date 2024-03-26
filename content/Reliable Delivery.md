@@ -1,5 +1,5 @@
 
-What [TCP](TCP.md) does
+What [TCP](TCP/TCP.md) does
 
 Challenges of reliable data transfer:
 - Over a channel with bit errors:
