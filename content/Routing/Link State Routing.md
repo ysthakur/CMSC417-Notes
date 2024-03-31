@@ -14,7 +14,7 @@ Link State Packet (LSP) contains:
 	- Initially, this used time, but now it's **hop count** instead
 	- Currently, IP uses 64 as default value
 
-One link state routing protocol (implementation?) is [Open Shortest Path First (OSPF)](OSPF)
+One link state routing protocol (implementation?) is [Open Shortest Path First (OSPF)](OSPF.md)
 
 ## Reliable flooding
 

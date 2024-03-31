@@ -63,7 +63,7 @@ How TCP detects packet losses:
 
 ### Congestion window
 
-- Each TCP sender maintains congestion window
+- Each TCP sender maintains congestion window (**CWND**)
 	- Max number of bytes to have in transit (not yet ACK'd)
 - Adapting the congestion window
 	- Decrease upon losing a packet
@@ -78,3 +78,15 @@ How TCP detects packet losses:
 - Congestion control keeps a *set of senders* from overloading the *network*
 - Different concepts, but similar mechanisms
 	- Sender TCP window = `min(congestion_window, receiver_window)`
+
+> [!note]
+> **Conservation of packets**: If the connection is running at available capacity (bandwidth) then a packet is not injected into the network unless a packet is taken out.
+
+### Implementation Details
+
+Update time: per RTT vs per ACK
+
+- Double CWND per round-trip time
+	- Implemented as CWND = CWND + 1 (per ACK)
+- Linear increase of CWND per round-trip time
+	- Implemented as CWND = CWND + 1/CWND (per ACK)
