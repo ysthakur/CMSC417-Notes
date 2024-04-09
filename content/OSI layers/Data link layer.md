@@ -3,3 +3,14 @@
 - Collects a stream of bits into a larger aggregate called a [frame](Frame)
 - Network adapters, along with device drivers in OS implement the protocol in this layer
 - [Frames](../Frame.md) are actually delivered to hosts
+
+## Link Layer Responsibilities
+
+- Single-hop addressing (e.g. Ethernet addresses)
+- Media access control
+	- Link-layer congestion control
+	- Collision detection/collision avoidance
+- Single-hop acknowledgments
+	- [Automatic Repeat reQuest (ARQ)](../ARQ.md)
+	- Flow control
+	- Not implemented in wired LAN (e.g. [Ethernet](../Ethernet.md))

@@ -4,4 +4,3 @@
 	- Not an implementation error
 	- Weakness in TCP spec
 	- TCP's design doesn't consider that senders and receivers can have disjoint interests
-- 

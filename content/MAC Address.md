@@ -2,6 +2,7 @@
 - Used locally to get frame from one interface to another physically-connected interface (inside the same network)
 - Used at link layer level
 - Manufacturer buys portion of MAC address space to assure uniqueness
+- Burned in NIC ROM, sometimes can be set in software
 
 ## MAC Addresses vs IP Addresses
 
