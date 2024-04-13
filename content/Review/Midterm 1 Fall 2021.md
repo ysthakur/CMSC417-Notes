@@ -13,7 +13,7 @@ From [s21-0.pdf](Past%20Exams/s21-0.pdf)
 
 ## Routing
 
-#### List two advantages of [Link State Routing](../Routing/Link%20State%20Routing.md) over [Distance Vector Routing](../Routing/Distance%20Vector%20Routing.md)
+#### List two advantages of [Link State Routing](../OSI%20layers/Network%20layer/Routing/Link%20State%20Routing.md) over [Distance Vector Routing](../OSI%20layers/Network%20layer/Routing/Distance%20Vector%20Routing.md)
 ==TODO==
 
 #### Give an example that shows the difference between regular Distance Vector (DV) and DV with Split Horizon

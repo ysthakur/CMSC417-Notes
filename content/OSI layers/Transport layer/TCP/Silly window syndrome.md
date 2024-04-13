@@ -1,5 +1,5 @@
 ==TODO google silly window syndrome==
-Problem with [TCP](TCP/TCP.md)
+Problem with [TCP](TCP.md)
 
 - Happens when receiver doesn't consume data fast enough
 - Receiver advertises very small window

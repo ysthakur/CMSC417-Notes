@@ -12,7 +12,7 @@ Routing protocol goal: Determine "good" paths (routes) from sending host to rece
 
 
 > [!note]
-> Treating networks as graphs is also useful for [P2P](../PPP.md), where nodes are peers and edges are TCP connections
+> Treating networks as graphs is also useful for [P2P](../../../PPP.md), where nodes are peers and edges are TCP connections
 
 ## Routing
 
@@ -25,8 +25,8 @@ But such a static approach has shortcomings:
 
 Solution: use a distributed and dynamic protocol
 Two main classes of protocols:
-1. [Distance Vector Routing](Routing/Distance%20Vector%20Routing.md)
-2. [Link State Routing](Routing/Link%20State%20Routing.md)
+1. [Distance Vector Routing](Distance%20Vector%20Routing.md)
+2. [Link State Routing](Link%20State%20Routing.md)
 
 ### Link State Routing vs Distance Vector Routing
 

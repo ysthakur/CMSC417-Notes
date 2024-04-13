@@ -1,4 +1,4 @@
-Less likely to have loops than [Distance Vector Routing](Routing/Distance%20Vector%20Routing.md) (but loops still possible)
+Less likely to have loops than [Distance Vector Routing](Distance%20Vector%20Routing.md) (but loops still possible)
 
 Strategy:
 - Send to all nodes (not just neighbors) information about neighbors (not connection to all nodes)

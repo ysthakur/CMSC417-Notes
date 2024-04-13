@@ -1,4 +1,4 @@
-[Congestion](TCP/TCP%20Congestion.md) control so far has been about what endpoints can do to make good use of shared underlying resources.
+[Congestion](TCP%20Congestion.md) control so far has been about what endpoints can do to make good use of shared underlying resources.
 
 Now, what can the individual *links* do?
 

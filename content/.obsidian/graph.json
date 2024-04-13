@@ -1,17 +1,17 @@
 {
   "collapse-filter": true,
-  "search": "-file:index -path:Review",
+  "search": "-file:index -path:Review -tag:#hide  ",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:\"OSI layers\"  ",
+      "query": "path:\"OSI layers/Transport layer/TCP\"  ",
       "color": {
         "a": 1,
-        "rgb": 14168083
+        "rgb": 4428752
       }
     },
     {
@@ -27,18 +27,25 @@
         "a": 1,
         "rgb": 2212924
       }
+    },
+    {
+      "query": "tag:#osi-layer  ",
+      "color": {
+        "a": 1,
+        "rgb": 14096722
+      }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 0.94043659043659,
+  "nodeSizeMultiplier": 0.858939708939709,
   "lineSizeMultiplier": 0.818191268191268,
   "collapse-forces": false,
-  "centerStrength": 0.321205821205821,
-  "repelStrength": 6.75675675675676,
-  "linkStrength": 1,
-  "linkDistance": 77,
-  "scale": 0.8814265637106395,
+  "centerStrength": 0.308731808731809,
+  "repelStrength": 7.58835758835759,
+  "linkStrength": 0.915800415800416,
+  "linkDistance": 181,
+  "scale": 0.7583165124929582,
   "close": true
 }

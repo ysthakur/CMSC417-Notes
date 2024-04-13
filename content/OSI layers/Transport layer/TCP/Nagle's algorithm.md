@@ -1,4 +1,4 @@
-Sender-side solution to [Silly window syndrome](TCP/Silly%20window%20syndrome.md)
+Sender-side solution to [Silly window syndrome](Silly%20window%20syndrome.md)
 
 ```
 if there is new data to send:

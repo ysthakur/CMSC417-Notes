@@ -2,7 +2,7 @@
 tags:
   - protocol
 ---
-Transmission Control Protocol (TCP) is a [transport layer](OSI%20layers/Transport%20layer.md) protocol
+Transmission Control Protocol (TCP) is a [transport layer](../Transport%20layer.md) protocol
 
 Maintains illusion that both hosts are using the same buffer
 - Host A writes to its segment, Host B reads from its segment
@@ -71,4 +71,4 @@ $\text{Timeout} = 2 \cdot \text{EstimatedRTT}$ (double to be conservative)
 
 ## Header
 
-![TCP Header](img/tcp-header.png)
+![TCP Header](tcp-header.png)

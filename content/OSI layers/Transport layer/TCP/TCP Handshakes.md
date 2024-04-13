@@ -8,4 +8,4 @@
 
 Each host tells its ISN to the other host
 
-![TCP Handshake](img/tcp-handshake.png)
+![TCP Handshake](tcp-handshake.png)
