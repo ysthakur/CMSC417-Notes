@@ -3,7 +3,7 @@ aliases:
   - Network Address Translation
 ---
 NAT (Network Address Translation)
-- You get a private [IP address](IP/IP%20Addresses.md) within your network
+- You get a private [IP address](OSI%20layers/Network%20layer/IP/IP%20Addresses.md) within your network
 - Rest of the world only sees your router's IP address
 - All datagrams leaving local network have same single source NAT IP address
 - *But* different source port numbers

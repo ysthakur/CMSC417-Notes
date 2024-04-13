@@ -33,7 +33,7 @@ Uses [CSMA/CD](CSMA.md):
 	- Adapter passes frame to network-level protocol if destination is local MAC address or broadcast address
 	- Otherwise, adapter discards frame
 - Type: indicates higher level protocol
-	- Usually [IP](IP/IP.md), but also others
+	- Usually [IP](../Network%20layer/IP/IP.md), but also others
 - CRC: cyclic redundancy check
 
 

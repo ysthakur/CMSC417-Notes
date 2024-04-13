@@ -8,10 +8,10 @@ Strategy:
 
 Example (router R2 wants to send a datagram):
 
-![](../../img/ip-datagram-forwarding.png)
+![](../../../img/ip-datagram-forwarding.png)
 
 R2's forwarding table:
-![R2's forwarding table](../../img/ip-datagram-forwarding-table.png)
+![R2's forwarding table](../../../img/ip-datagram-forwarding-table.png)
 
 Algorithm:
 - First find `NetworkNum` of destination

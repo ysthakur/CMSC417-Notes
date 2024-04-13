@@ -22,7 +22,7 @@ Multi-homing: A host might use multiple providers
 
 ### Problem with multi-homing
 
-![CIDR multi-homing](../../img/cidr-multi-homing.png)
+![CIDR multi-homing](../../../img/cidr-multi-homing.png)
 
 - Provider 1 has aggregated the four subnets
 - The yellow address (201.10.6.0/23) is being shared through both Provider 1 and Provider 2

@@ -11,7 +11,7 @@ aliases:
 	- Can renew lease on address in use
 - Support for mobile users who want to join network
 
-In addition to [IP Address](../IP/IP%20Addresses.md), also returns:
+In addition to [IP Address](../OSI%20layers/Network%20layer/IP/IP%20Addresses.md), also returns:
 - Address of first-hop router for client
 - Name and IP address of DNS server
 - Network mask (to indicate network vs host portion of address)

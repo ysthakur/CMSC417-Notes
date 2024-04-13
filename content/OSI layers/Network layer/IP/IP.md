@@ -7,7 +7,7 @@ tags:
 - IP = Internet Protocol
 - Runs on all the nodes in a collection of networks and defines the infrastructure that allows these nodes and networks to function as a single logical internetwork
 
-![IP hourglass](../../img/ip-hourglass.png)
+![IP hourglass](../../../img/ip-hourglass.png)
 
 ## IP Service Model
 
@@ -30,7 +30,7 @@ tags:
 - It only has a checksum for the header (not the data) because it only cares about the header
 	- Higher level protocols will deal with the data
 
-![IP datagram format](../../img/ip-datagram-format.png)
+![IP datagram format](../../../img/ip-datagram-format.png)
 
 - IP doesn't have a separate data length field, you can calculate it with packet length - header length
 

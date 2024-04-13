@@ -1,4 +1,4 @@
-- Internet has multiple [protocol](Protocol.md) layers
+- [Internet](../Internet.md) has multiple [protocol](Protocol.md) layers
 - Each layer implements a service, relying on services provided by layers below
 - Enables encapsulation
 
