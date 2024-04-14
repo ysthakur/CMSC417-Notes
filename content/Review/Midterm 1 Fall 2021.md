@@ -1,7 +1,7 @@
 ---
 aliases:
 ---
-From [s21-0.pdf](Past%20Exams/s21-0.pdf)
+From [Past Exams/s21-0.pdf](Past%20Exams/s21-0.pdf)
 
 ## Nomenclature
 

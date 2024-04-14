@@ -18,6 +18,9 @@ Sequence number:
 	- ==TODO read up on this==
 - Sequence number = ISN + (number of first byte of segment)
 
+Maximum Segment Size (MSS):
+- Usually set to the largest segment TCP can send without causing local IP to fragment, i.e., the MTU of the directly connected network, minus the size of TCP and IP headers
+
 ## Handshakes
 
 See [TCP Handshakes](TCP%20Handshakes.md)

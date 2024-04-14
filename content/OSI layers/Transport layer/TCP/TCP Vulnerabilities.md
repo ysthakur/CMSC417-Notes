@@ -33,7 +33,7 @@ Fast Retransmit and Recovery:
 	- On a DupACK += SMSS
 
 Exploit:
-- Send extra duplicate ACKs
+- Send extra duplicate ACKs to trigger fast recovery
 - Sender sends one packet for each duplicate ACK
 - ✅ Preserves end-to-end semantics
 

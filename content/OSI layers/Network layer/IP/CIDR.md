@@ -1,6 +1,7 @@
 ---
 aliases:
   - Classless Inter-Domain Routing
+  - Classless Addressing
 ---
 Improvement on [Classful Addressing](Classful%20Addressing.md)
 
