@@ -12,7 +12,7 @@ Routing protocol goal: Determine "good" paths (routes) from sending host to rece
 
 
 > [!note]
-> Treating networks as graphs is also useful for [P2P](../../../PPP.md), where nodes are peers and edges are TCP connections
+> Treating networks as graphs is also useful for P2P/PPP, where nodes are peers and edges are TCP connections
 
 ## Routing
 

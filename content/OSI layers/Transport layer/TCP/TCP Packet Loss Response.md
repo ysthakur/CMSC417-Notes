@@ -1,5 +1,5 @@
 Two types of [TCP](TCP.md) losses:
-1. Triple duplicate ACK (response: Fast retransmit)
+1. Triple duplicate ACK (response: [Fast retransmit](Fast%20Retransmit%20+%20Fast%20Recovery.md))
 	- Packet $n$ is lost, but packets $n+1$, $n+2$, etc. arrive
 	- Then, sender quickly resends packet $n$
 	- Do a multiplicative decrease and keep going

@@ -1,3 +1,0 @@
-- Hierarchy is key to scalability
-- Address allocated in contiguous chunks (prefixes)
-- Today, the Internet has about 400,000 prefixes

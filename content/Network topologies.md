@@ -1,5 +1,5 @@
 - One possible topology:
-    - Point-to-point ([P2P](PPP.md)) connections
+    - Point-to-point (P2P/PPP) connections
         - Every computer is connected directly to every other computer
         - Problem: Not scalable
 - Solutions:

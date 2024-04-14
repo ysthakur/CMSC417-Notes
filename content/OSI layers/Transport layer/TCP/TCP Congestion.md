@@ -52,7 +52,7 @@ How TCP detects packet losses:
 ### TCP congestion control
 - ACK works as the indicator and the window controls the flow
 - Congestion_window: calculated by sender
-- Additive increase, multiplicative decrease
+- Additive increase, multiplicative decrease (AIMD)
 	- On packet loss, divide congestion window in half
 		- Exponential decrease because:
 			- Congestion is very bad, need to react aggressively

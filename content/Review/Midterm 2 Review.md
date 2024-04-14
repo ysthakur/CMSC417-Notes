@@ -1,15 +1,3 @@
-## Nomenclature
-
-1. Sender Policy Framework (SPF) - ==TODO==
-	1. On Fall 2021
-2. Name Server - ==TODO==
-3. DNS Zone - ==TODO==
-	1. On Fall 2021
-4. DKIM (the protocol) - ==TODO==
-	1. On Fall 2021
-5. DNS PTR Record - ==TODO==
-	1. On Fall 2021
-
 ## [[IP]] (Chapter 3, Section 3.2 (?))
 
 ### [CIDR](../OSI%20layers/Network%20layer/IP/CIDR.md) (Section 3.2.5)
@@ -20,7 +8,10 @@
 
 ### Private address spaces and [NAT](../NAT.md)
 
-### [ICMP](../ICMP.md) (Section 3.2.8; Ping and Traceroute in class slides)
+### [ICMP](../ICMP/ICMP.md) (Section 3.2.8; Ping and Traceroute in class slides)
+
+- [Ping](../ICMP/Ping.md) - Use ICMP echo messages
+- [Traceroute](../ICMP/Traceroute.md) - Sends packets with small TTLs so each router sends an ICMP Time Exceeded error message back
 
 ### Virtual Networks and Tunnels (Section 3.2.9)
 
@@ -62,3 +53,12 @@
 
 **[TCP Vulnerabilities](../OSI%20layers/Transport%20layer/TCP/TCP%20Vulnerabilities.md)** (Mentioned research paper and class slides)
 
+## Problem Solving
+
+1. [CIDR](../OSI%20layers/Network%20layer/IP/CIDR.md)
+2. [ICMP](../ICMP/ICMP.md), [Traceroute](../ICMP/Traceroute.md)
+3. 3-way handshake for TCP
+4. Calculating header fields for TCP segments/packets and ACKs
+5. Throughput calculation for [ARQ](../ARQ.md) protocols
+6. Calculating advertised window
+7. Observing congestion window behavior

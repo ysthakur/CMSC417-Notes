@@ -18,9 +18,11 @@ Scalability Challenge:
 	- Then every router would need a lot of info to know how to direct packets toward every host
 
 Hierarchical addressing (IP prefixes):
-- Easy to add new hosts
+- Hierarchy is key to scalability - easy to add new hosts
 	- No need to update the routers
 	- Doesn't require adding a new forwarding-table entry
+- Address allocated in contiguous chunks (prefixes)
+- Today, the Internet has about 400,000 prefixes
 
 ## Classful Addressing
 

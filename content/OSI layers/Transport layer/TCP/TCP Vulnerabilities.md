@@ -25,7 +25,7 @@ Countermeasures:
 
 ### DupACK Spoofing
 
-Fast Retransmit and Recovery:
+[Fast Retransmit + Fast Recovery](Fast%20Retransmit%20+%20Fast%20Recovery.md):
 - If receive out-of-order segment, sends DupACK
 - If sender receives 3 DupACKs,
 	- it fast retransmits and enters fast recovery
