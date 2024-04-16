@@ -29,4 +29,4 @@ Retransmission hints:
 	- Sender retransmits lost or corrupted data
 	- 2 main ways to detect lost packets
 
-[Automatic Repeat reQuest (ARQ)](ARQ.md)
+[Automatic Repeat reQuest (ARQ)](ARQ/ARQ.md)

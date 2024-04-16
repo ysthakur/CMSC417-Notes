@@ -17,6 +17,6 @@ tags:
 	- Link-layer congestion control
 	- Collision detection/collision avoidance
 - Single-hop acknowledgments
-	- [Automatic Repeat reQuest (ARQ)](../../ARQ.md)
+	- [Automatic Repeat reQuest (ARQ)](../../ARQ/ARQ.md)
 	- Flow control
 	- Not implemented in wired LAN (e.g. [Ethernet](Ethernet.md))

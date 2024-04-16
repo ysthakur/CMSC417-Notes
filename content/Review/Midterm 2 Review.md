@@ -56,7 +56,7 @@ Main differences from IPv4:
 
 #### Packet format, flags, sequence number (Section 5.2.2, 5.2.3)
 
-#### [ARQ](../ARQ.md) protocols: stop-and-wait, sliding window (Section 5.2.4 and class slides)
+#### [ARQ](../ARQ/ARQ.md) protocols: stop-and-wait, sliding window (Section 5.2.4 and class slides)
 
 #### Cumulative ACK (Section 6.3.2, 6.3.3, class slides)
 ==TODO important==
@@ -82,6 +82,9 @@ Main differences from IPv4:
 
 **[Fast Retransmit + Fast Recovery](../OSI%20layers/Transport%20layer/TCP/Fast%20Retransmit%20+%20Fast%20Recovery.md)** (Section 6.3.3)
 
+- Fast retransmit: When 3 DUP ACKs received, retransmit lost packet without waiting for timeout
+- Fast recovery: When fast retransmit is triggered, instead of going into [Slow start](../OSI%20layers/Transport%20layer/TCP/Congestion/Slow%20start.md), just halve CWND
+
 **[TCP Variants](../OSI%20layers/Transport%20layer/TCP/TCP%20Variants.md) and [Router-Assisted Congestion Control](../OSI%20layers/Transport%20layer/TCP/Congestion/Router-Assisted%20Congestion%20Control.md)** (Chapters 5 and 6)
 
 **[TCP Vulnerabilities](../OSI%20layers/Transport%20layer/TCP/TCP%20Vulnerabilities.md)** (Mentioned research paper and class slides)
@@ -92,6 +95,6 @@ Main differences from IPv4:
 2. [ICMP](../ICMP/ICMP.md), [Traceroute](../ICMP/Traceroute.md)
 3. 3-way handshake for TCP: [TCP Handshake](../OSI%20layers/Transport%20layer/TCP/TCP%20Handshake.md)
 4. Calculating header fields for TCP segments/packets and ACKs
-5. Throughput calculation for [ARQ](../ARQ.md) protocols
+5. Throughput calculation for [ARQ](../ARQ/ARQ.md) protocols
 6. Calculating advertised window
 7. Observing congestion window behavior

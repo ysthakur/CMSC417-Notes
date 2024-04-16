@@ -12,7 +12,7 @@ User Datagram Protocol (UDP) is a [transport layer](OSI%20layers/Transport%20lay
 	- No handshaking between UDP client and server
 	- Each UDP segment handled independently of others
 - Datagram messaging service
-	- Demultiplexing based on port numbers
+	- Multiplexing based on port numbers
 	- Detects corruption using checksum
 - To achieve reliable transfer over UDP, add reliability at application layer
 	- Application-specific error recovery
@@ -29,6 +29,10 @@ Uses for UDP:
 - No connection set-up delay
 - No connection state: No buffers, parameters, sequence numbers, etc.
 - Small header overhead: UDP header only 8 bytes
+
+What does UDP provide over IP?
+- Checksum
+- Multiplexing based on port number
 
 ## Checksum
 

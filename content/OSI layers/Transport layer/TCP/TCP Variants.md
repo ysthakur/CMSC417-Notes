@@ -11,7 +11,7 @@
 	- Windowing: self-clocking
 	- Other functions: RTT estimation, error recovery
 
-![Tahoe congestion window](../../../Pasted%20image%2020240415182013.png)
+![Tahoe congestion window](tahoe-cwnd.png)
 
 ## Reno (1990)
 
@@ -21,7 +21,7 @@
 	- 3 DupACKs => fast retransmit + fast recovery
 	- Timeout => fast retransmit + slow start
 
-![](../../../Pasted%20image%2020240415182028.png)
+![](reno-cwnd.png)
 
 ## Vegas (1994)
 

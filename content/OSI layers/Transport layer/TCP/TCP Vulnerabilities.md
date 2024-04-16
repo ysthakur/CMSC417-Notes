@@ -25,11 +25,11 @@ Countermeasures:
 ### DupACK Spoofing
 
 [Fast Retransmit + Fast Recovery](Fast%20Retransmit%20+%20Fast%20Recovery.md):
-- If receive out-of-order segment, sends DupACK
+- If receive out-of-order segment, receiver sends DUP ACK back
 - If sender receives 3 DupACKs,
-	- it fast retransmits and enters fast recovery
-	- CWND = CWND / 2 + 3 \* SMSS
-	- On a DupACK += SMSS
+	- it fast retransmits and enters fast recovery ([Fast Retransmit + Fast Recovery](Fast%20Retransmit%20+%20Fast%20Recovery.md))
+	- `CWND = CWND / 2 + 3 * SMSS`
+	- On a DupACK, `CWND += SMSS`
 
 Exploit:
 - Send extra duplicate ACKs to trigger fast recovery
@@ -46,7 +46,7 @@ When sender receives a new ACK, it increases CWND
 - But receiver might not actually have received the packet!
 
 Exploit:
-- So, receiver sends ACKs early
+- Receiver sends ACKs early
 - Sender sends packets in proportion to ACK rate
 - ❌ Violates end-to-end semantics
 - ❌ Lose reliability

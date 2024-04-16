@@ -24,6 +24,10 @@ Sequence number:
 
 See [TCP Handshake](TCP%20Handshake.md)
 
+## Header
+
+See [TCP Header](TCP%20Header.md)
+
 ## ISN
 
 Why does ISN have to be random?

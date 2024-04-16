@@ -4,7 +4,7 @@
 
 ## Fields
 
-
+- [Advertised window](Advertised%20window.md) - Max number of bytes receive can receive
 
 ## Flags
 
