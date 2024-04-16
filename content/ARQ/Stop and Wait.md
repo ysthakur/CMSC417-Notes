@@ -26,3 +26,21 @@ Design decisions:
 	- Set timeout as a function of the RTT
 		- plus a fudge factor to account for queueing
 	- Find RTT using running average of delays
+
+## Throughput
+
+Worked example:
+- Packet size: $L = 8000$ bits
+- Network bandwidth: $R = 1$ Gbps
+- [Propagation delay](../Delay.md): 15 ms
+- RTT: `2 * propagation_delay = 30 ms`
+
+Transmission delay:
+$$d_{\text{trans}} = \frac L R = \frac{8000}{10^9} = 8 \mathrm{\mu s}$$
+
+Utilization (fraction of time sender busy sending):
+$$U_{\text{sender}} = \frac{L/R}{RTT+L/R} = \frac{0.008}{30.008} = 0.00027$$
+
+If you send a 1KB packet every 30.008 msec, throughput is 33 kB/sec even though the link's bandwidth is 1 Gbps
+- This is pretty terrible
+- Check out throughput of [Sliding Window](Sliding%20Window.md) instead
