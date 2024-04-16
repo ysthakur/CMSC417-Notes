@@ -63,5 +63,7 @@ $\text{Timeout} = 2 \cdot \text{EstimatedRTT}$ (double to be conservative)
 	1. Stop taking RTT samples when TCP retransmits
 	2. Start again after a regular transmission/reception
 	3. Each time TCP retransmits, set next timeout to be twice the last timeout value
-- Problem with Karn/Partridge with rules #1 and #2
-	- ??? ==TODO google==
+- Problem with Karn/Partridge with rules #1 and #2 if delay increases sharply:
+	- TCP would ignore RTT of all retransmitted packets
+	- Estimated RTT may never be updated
+	- Then TCP will continue retransmitting every segment
