@@ -18,16 +18,16 @@ Sequence number:
 	- ==TODO read up on this==
 - Sequence number = ISN + (number of first byte of segment)
 
-Maximum Segment Size (MSS):
-- Usually set to the largest segment TCP can send without causing local IP to fragment, i.e., the MTU of the directly connected network, minus the size of TCP and IP headers
+![Maximum Segment Size](MSS.md)
 
 ## Handshakes
 
-See [TCP Handshakes](TCP%20Handshakes.md)
+See [TCP Handshake](TCP%20Handshake.md)
 
 ## ISN
 
 Why does ISN have to be random?
+- To prevent sequence number spoofing?
 - ==TODO==
 
 ## What if SYN Packet Gets Lost?
@@ -48,16 +48,6 @@ Closing each end of the connection:
 	- Sends FIN ACK to acknowledge
 3. Reset (RST) to close and not receive remaining bytes
 
-## PSH and URG flags
-
-PSH (push):
-- Used for chat servers
-- Send data packet immediately even if it's only a small piece of data
-
-URG (urgent):
-- Urgent pointer tells the receiver that the data there is important
-- Used in TELNET but not used much outside of that
-
 ## Calculating TCP timeout
 
 Estimate round-trip time (RTT): $\text{EstimatedRTT} = \alpha \cdot \text{EstimatedRTT} + (1 - \alpha) \cdot \text{SampleRTT}$
@@ -65,13 +55,9 @@ Estimate round-trip time (RTT): $\text{EstimatedRTT} = \alpha \cdot \text{Estima
 $\text{Timeout} = 2 \cdot \text{EstimatedRTT}$ (double to be conservative)
 
 - RTT estimation can be wrong
-- Solution: Karn/Partridge algorithm
+- Solution: **Karn/Partridge algorithm**
 	1. Stop taking RTT samples when TCP retransmits
 	2. Start again after a regular transmission/reception
 	3. Each time TCP retransmits, set next timeout to be twice the last timeout value
 - Problem with Karn/Partridge with rules #1 and #2
 	- ??? ==TODO google==
-
-## Header
-
-![TCP Header](tcp-header.png)

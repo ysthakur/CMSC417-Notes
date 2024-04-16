@@ -3,6 +3,7 @@ aliases:
   - VPN
   - Virtual Networks
   - Tunneling
+  - Tunnels
 ---
 You may have two separate trusted networks that are connected by an untrusted/shared network
 
@@ -14,13 +15,13 @@ Use virtual tunnels to encapsulate
 
 Whenever a packet is passed, the Internet will see this as Gateway A sending a packet to Gateway B
 - Encapsulation: Wrap the IP packet in another IP packet
-- Decapsulation: rip off IP header to get actual IP header
+- Decapsulation: Rip off IP header to get actual IP header
 - Also add encryption
 
 Pros:
 - Security
 - Special capabilities between routers (e.g. multicast)
-- Supporting heterogeneity (==TODO what does this mean==)
+- Supporting heterogeneity (==TODO what does this mean? Different packets using different protocols?==)
 Cons:
 - Increases packet length
 	- Wastage of bandwidth

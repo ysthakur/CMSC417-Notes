@@ -7,7 +7,7 @@ Two types of [TCP](TCP.md) losses:
 	- Packet $n$ is lost and detected via timeout
 	- Blasting entire congestion window would cause another burst
 	- Better to start over with a new congestion window (CWND=1)
-	- Slow-start restart: slow start until reaching half of previous CWND
+	- Slow-start restart: [Slow start](Congestion/Slow%20start.md) until reaching half of previous CWND
 		- Why not restart at old CWND?
 		- Suppose TCP connection goes idle for a while
 		- Network conditions might change in between, maybe link is now backed up

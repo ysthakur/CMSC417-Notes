@@ -4,7 +4,7 @@ aliases:
 tags:
   - protocol
 ---
-ARP (Address Resolution Protocol)
+Address Resolution Protocol (ARP)
 
 ARP table:
 - Used to determine the interface's MAC address given its IP address

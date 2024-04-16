@@ -25,5 +25,4 @@ Differences from IPv4
 
 ## IPv4 and IPv6 Co-existence
 
-- A router may not support IPv6
-- Act like virtual network - encapsulate IPv6 packet in an IPv4 packet
+If a router doesn't support IPv6, act like virtual network - encapsulate IPv6 packet in an IPv4 packet

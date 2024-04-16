@@ -14,8 +14,7 @@ Bytes vs Segments:
 - TCP begins a session in slow start
 
 Exploit:
-- When receive a data segment with $N$ bytes,
-- Send $M$ ACKs for one packet, where $M \leq N$
+- When receive a data segment with $N$ bytes, send $M$ ACKs for one packet, where $M \leq N$
 - Exponential growth factor proportional to $M$
 - ✅ Preserves end-to-end semantics
 
