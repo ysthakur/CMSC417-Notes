@@ -19,13 +19,13 @@ Throughput vs Load:
 
 ![Throughput vs load](img/throughput-vs-load.png)
 
-### Congestion collapse
+## Congestion collapse
 
 Too much throughput easily leads to congestion collapse
 - Senders retransmit lost packets
 - Leading to an even greater load and even more packet loss
 
-### Detecting congestion
+## Detecting congestion
 
 - Link layer
 	- Carrier sense multiple access
@@ -40,7 +40,7 @@ How TCP detects packet losses:
 2. Timeout
 	- Packet N is lost and detected via a timeout
 
-### Responding to congestion
+## Responding to congestion
 
 - Upon detecting congestion
 	- Decrease sending rate
@@ -49,7 +49,7 @@ How TCP detects packet losses:
 	- Increase sending rate, a little at a time
 	- See if packets get through
 
-### TCP congestion control
+## TCP congestion control
 - ACK works as the indicator and the window controls the flow
 - Congestion_window: calculated by sender
 - Additive increase, multiplicative decrease (AIMD)
@@ -61,7 +61,7 @@ How TCP detects packet losses:
 
 ![Congestion control](tcp-congestion-control.png)
 
-### Congestion window
+## Congestion window
 
 - Each TCP sender maintains congestion window (**CWND**)
 	- Max number of bytes to have in transit (not yet ACK'd)
@@ -72,7 +72,7 @@ How TCP detects packet losses:
 - Pro: avoids explicit network feedback
 - Con: constantly over- and under-shoots "right" rate
 
-#### Difference between advertised window and congestion window
+### Difference between advertised window and congestion window
 
 - Flow control keeps a *fast sender* from overwhelming a *slow receiver*
 - Congestion control keeps a *set of senders* from overloading the *network*
@@ -82,7 +82,7 @@ How TCP detects packet losses:
 > [!note]
 > **Conservation of packets**: If the connection is running at available capacity (bandwidth) then a packet is not injected into the network unless a packet is taken out.
 
-### Implementation Details
+## Implementation Details
 
 Update time: per RTT vs per ACK
 
@@ -90,3 +90,9 @@ Update time: per RTT vs per ACK
 	- Implemented as CWND = CWND + 1 (per ACK)
 - Linear increase of CWND per round-trip time
 	- Implemented as CWND = CWND + 1/CWND (per ACK)
+
+## FSM Diagram
+
+TCP Congestion Control summarized as a finite state machine:
+
+![TCP congestion control as a finite state machine](../../../../Pasted%20image%2020240416115041.png)
