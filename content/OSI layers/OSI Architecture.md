@@ -10,7 +10,7 @@ Example of layered network system:
 1. Application programs ([Application layer](Application%20layer.md))
 2. Process-to-process channels ([Transport layer](Transport%20layer/Transport%20layer.md))
 3. Host-to-host connectivity ([Network layer](Network%20layer/Network%20layer.md) and [Link layer](Link%20layer/Link%20layer.md) (?))
-4. Hardware ([Physical layer](Physical%20layer.md))
+4. Hardware ([Physical layer](Physical%20layer/Physical%20layer.md))
 
 ![Internet architecture](../img/internet-architecture.png)
 
@@ -23,7 +23,7 @@ Example of layered network system:
 
 ### Application layer
 
-![Application layer](Application%20layer.md)
+![Application layer](./Application%20layer.md)
 
 ### Presentation layer
 
@@ -39,7 +39,7 @@ Example of layered network system:
 
 ### Network layer
 
-![Network layer](Network%20layer/Network%20layer.md)
+![Network layer](./Network%20layer/Network%20layer.md)
 
 ### Link layer
 
@@ -47,4 +47,4 @@ Example of layered network system:
 
 ### Physical layer
 
-![Physical layer](Physical%20layer.md)
+![Physical layer](Physical%20layer/Physical%20layer.md)

@@ -1,6 +1,7 @@
 ---
 aliases:
   - Switching
+  - Switch
 ---
 To allow multiple computers to share one point
 - Essentially the same as a [bridge](Bridges.md),
@@ -19,6 +20,8 @@ Instead, [[Packet switching]] is used
 
 ### Self-learning: Building the Table
 
+Will try to learn which hosts are connected to which interfaces
+
 When a frame arrives:
 - Inspect the source MAC address
 - Associate the address with the incoming interface
@@ -31,7 +34,7 @@ When frame arrives with unfamiliar destination:
 - Forward the frame to all the interfaces except for the ones where the frame arrived
 - Hopefully, this case won't happen often
 
-## Advantages over [Hubs/Repeaters](../Physical%20layer.md)
+## Advantages over [Hubs/Repeaters](../Physical%20layer/Physical%20layer.md)
 
 - Only forward frames as needed
 	- Avoid unnecessary load on segments

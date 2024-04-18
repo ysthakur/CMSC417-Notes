@@ -1,6 +1,7 @@
 ---
 aliases:
   - Carrier Sense Multiple Access
+  - CSMA/CD
 ---
 A [Multi-Access Protocol](Multi-Access%20Protocol.md)
 
@@ -18,11 +19,20 @@ But collisions can still occur
 
 ## Collision Detection
 
+The "CD" part of CSMA/CD
+
 - Collision happens when two packets overlap at receiver
 
 ==TODO see notes on preparing for worst-case scenario for collision (end of lecture 18 and midway through lecture 19)==
 
-- `Transmission time >= 2 * propagation time`
+Worst-case scenario of collision:
+- Two farthest nodes in the LAN
+- Transmission time should be greater than or equal to `2 * propagation time` for CSMA/CD to work
+- Formula for minimum packet size (P) or maximum length (L):
+	- $2L/c = 2d = P/B$, where $c$ is the speed of propagation
 
-- When receiver detects collision, sends jamming signal to ensure collision detection by both senders
+![What happens on collision](csma-cd-collision.png)
 
+- When receiver detects collision
+	- Stop sending
+	- Send jamming signal to ensure collision detection by all nodes in the link

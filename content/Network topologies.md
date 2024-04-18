@@ -3,10 +3,12 @@
         - Every computer is connected directly to every other computer
         - Problem: Not scalable
 - Solutions:
-    - Star-like topology with a central node
+    - Star-like topology with a central node/hub
         - Problem: network becomes centralized
     - Ring topology
         - Problem: Still not scalable with billions of computers
+	- Bus topology:
+		- Problem: Maximum length of link is limited
     - Multiple access
         - Shared channel, not totally centralized
         - This is what the [[Internet]] uses

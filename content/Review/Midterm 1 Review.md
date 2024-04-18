@@ -21,7 +21,7 @@ tags:
 		==TODO review==
 	7. Access networks (Refer to class slides and notes)
 		- [Home Networks](../Home%20Networks.md)
-		- [Ethernet](../OSI%20layers/Link%20layer/Ethernet.md)
+		- [Ethernet](../OSI%20layers/Link%20layer/Ethernet/Ethernet.md)
 		- [WANs](../WANs.md)
 		==TODO review==
 	8. [Failures](Failures), [Delay](../Delay.md), [Throughput](../Throughput.md), [Bandwidth](../Bandwidth.md) (Section: 1.2.4, 1.5)
