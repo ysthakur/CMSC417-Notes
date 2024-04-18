@@ -95,4 +95,4 @@ Update time: per RTT vs per ACK
 
 TCP Congestion Control summarized as a finite state machine:
 
-![TCP congestion control as a finite state machine](../../../../Pasted%20image%2020240416115041.png)
+![TCP congestion control as a finite state machine](tcp-congestion-fsm.png)

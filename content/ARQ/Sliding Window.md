@@ -22,9 +22,9 @@ If a packet in the middle of the window is ACKed but not the ones before it, the
 - Window size doesn't actually grow
 - I think this is actually only applicable to Selective Repeat. With Go-Back-N, you'd resend everything after the first lost/rejected packet
 
-![](../Pasted%20image%2020240416112718.png)
+![](sliding-window-1.png)
 
-![](../Pasted%20image%2020240416112732.png)
+![](sliding-window-2.png)
 
 ## Throughput
 

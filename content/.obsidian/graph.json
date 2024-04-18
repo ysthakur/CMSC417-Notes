@@ -5,15 +5,8 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
-    {
-      "query": "path:\"OSI layers/Transport layer/TCP\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 4428752
-      }
-    },
     {
       "query": "tag:#protocol  ",
       "color": {
@@ -34,6 +27,13 @@
         "a": 1,
         "rgb": 14096722
       }
+    },
+    {
+      "query": "path:\"OSI layers/Transport layer/TCP\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 4562142
+      }
     }
   ],
   "collapse-display": false,
@@ -42,7 +42,7 @@
   "nodeSizeMultiplier": 1.50072765072765,
   "lineSizeMultiplier": 0.818191268191268,
   "collapse-forces": false,
-  "centerStrength": 0.155275467775468,
+  "centerStrength": 0.150727650727651,
   "repelStrength": 7.18035343035343,
   "linkStrength": 0.915800415800416,
   "linkDistance": 52,

@@ -1,6 +1,8 @@
 ---
 aliases:
   - Network Address Translation
+tags:
+  - protocol
 ---
 NAT (Network Address Translation)
 - You get a private [IP address](OSI%20layers/Network%20layer/IP/IP%20Addresses.md) within your network
