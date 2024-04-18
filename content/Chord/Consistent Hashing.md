@@ -1,0 +1,7 @@
+- Each node and key are assigned an $m$-bit identifier
+- Identifiers are ordered on an **identifier circle** modulo $2^m$
+- Key $k$ is assigned to the first node whose identifier is equal to or follows $k$'s identifier in the identifier space
+	- This node is called the **successor node** of $k$
+- Designed to let nodes enter and leave network with minimal disruption
+	- When a node leaves, all its keys are reassigned to its successor
+	- No other keys need to be reassigned
