@@ -36,3 +36,12 @@ Worst-case scenario of collision:
 - When receiver detects collision
 	- Stop sending
 	- Send jamming signal to ensure collision detection by all nodes in the link
+
+## CSMA for [WiFi](WiFi/WiFi.md)
+
+Can use Collision Avoidance but not Collision Detection
+
+- Cannot detect all collisions
+- Cannot listen while sending
+
+### Hidden Terminal Problem

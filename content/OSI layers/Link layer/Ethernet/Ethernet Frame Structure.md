@@ -1,3 +1,4 @@
+Structure of an [Ethernet](Ethernet.md) frame
 - Sending adapter encapsulates packet in frame
 - Preamble: synchronization
 	- 7 bytes with pattern `10101010`, followed by 1 byte with pattern `10101011`
