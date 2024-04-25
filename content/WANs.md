@@ -14,4 +14,4 @@ Two kinds:
 - Wide-area wireless access:
 	- Provided by telco (cellular) operator, tens of kilometers (TODO confirm "tens of kilometers")
 	- Between 1 and 10 Mbps
-	- 3G, 4G: [LTE](LTE.md)
+	- 3G, 4G: LTE
