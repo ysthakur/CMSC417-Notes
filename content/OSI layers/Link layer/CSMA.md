@@ -20,10 +20,10 @@ But collisions can still occur
 ## Collision Detection
 
 The "CD" part of CSMA/CD
-
 - Collision happens when two packets overlap at receiver
 
-==TODO see notes on preparing for worst-case scenario for collision (end of lecture 18 and midway through lecture 19)==
+> [!note]
+> [Ethernet](Ethernet/Ethernet.md) does collision detection, but not [WiFi](WiFi/WiFi.md)
 
 Worst-case scenario of collision:
 - Two farthest nodes in the LAN
@@ -39,9 +39,13 @@ Worst-case scenario of collision:
 
 ## CSMA for [WiFi](WiFi/WiFi.md)
 
-Can use Collision Avoidance but not Collision Detection
-
-- Cannot detect all collisions
-- Cannot listen while sending
-
-### Hidden Terminal Problem
+802.11 does Collision Avoidance, but cannot do Collision Detection because of these two problems:
+1. Cannot detect all collisions
+	- Hidden terminal problem
+		- Happens because 802.11 uses physical carrier sensing, which is susceptible to the hidden terminal problem
+		- [Virtual Carrier Sensing](Virtual%20Carrier%20Sensing.md) can help with that
+	- Signal strength fades over distance
+	- (see [WiFi Broadcast Limitations](WiFi/WiFi%20Broadcast%20Limitations.md) for more info)
+2. Cannot listen while sending
+	- Strength of received signal is much smaller
+	- Expensive to build hardware that detects collisions

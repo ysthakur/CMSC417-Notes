@@ -10,7 +10,7 @@
 
 ## Architecture
 
-- [Access Point](Access%20Point.md)
+- [Access Point](LAN%20Architecture/Access%20Point.md)
 - Basic Service Set (BSS)
 	- Coverage of one AP
 	- AP acts as the master

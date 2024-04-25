@@ -5,8 +5,8 @@ tags:
 ## Modes
 
 Two modes:
-- [Infrastructure Mode](Infrastructure%20Mode.md)
-- [Ad-hoc Mode](Ad-hoc%20Mode.md)
+- [Infrastructure Mode](LAN%20Architecture/Infrastructure%20Mode.md)
+- [Ad-hoc Mode](LAN%20Architecture/Ad-hoc%20Mode.md)
 
 ## High Bit Error Rate
 
@@ -33,25 +33,7 @@ Dealing with bit errors:
 
 ## Broadcast Limitations
 
-Unlike wired broadcast links, where all nodes receive transmissions from all other nodes, with wireless broadcasts, some nodes may not hear each other
-
-### Hidden Terminal Problem
-
-Example:
-- A and B hear each other
-- B and C hear each other
-- But A and C can't hear each other
-
-![Hidden terminal example](hidden-terminal.png)
-
-### Fading over distance
-
-Example:
-- A and B hear each other
-- B and C hear each other
-- But A and C can't hear each other
-
-![](wifi-broadcast-strength-fade.png)
+See [WiFi Broadcast Limitations](WiFi%20Broadcast%20Limitations.md)
 
 ## Mobility Within Same Subnet
 
@@ -61,7 +43,7 @@ Example:
 - H1 recognizes the need to change
 	- H1 detects a weakening signal
 	- Starts scanning for a stronger one
-- Changes APs with same SSID
+- Changes [Access Points](LAN%20Architecture/Access%20Point.md) with same SSID
 	- H1 disassociates from one and associates with another
 - Switch learns new location
 	- Self-learning mechanism

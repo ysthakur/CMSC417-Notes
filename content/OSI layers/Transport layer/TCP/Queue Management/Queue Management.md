@@ -25,9 +25,9 @@ Queue management issues:
 		- Get 1-2 connections to slow down before it's too late
 
 Two ways of giving early feedback:
-- [Random Early Detection](Queue%20Management/RED.md) (RED)
-- [Explicit Congestion Notification](Queue%20Management/ECN.md) (ECN)
+- [Random Early Detection](RED.md) (RED)
+- [Explicit Congestion Notification](ECN.md) (ECN)
 
 ## Link Scheduling
 
-[Link Scheduling](Queue%20Management/Link%20Scheduling.md)
+[Link Scheduling](Link%20Scheduling.md)
