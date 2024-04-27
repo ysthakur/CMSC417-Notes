@@ -5,8 +5,8 @@ tags:
 ## Modes
 
 Two modes:
-- [Infrastructure Mode](LAN%20Architecture/Infrastructure%20Mode.md)
-- [Ad-hoc Mode](LAN%20Architecture/Ad-hoc%20Mode.md)
+- [Infrastructure Mode](802.11%20LAN%20Architecture/Infrastructure%20Mode.md)
+- [Ad-hoc Mode](802.11%20LAN%20Architecture/Ad-hoc%20Mode.md)
 
 ## High Bit Error Rate
 
@@ -43,7 +43,7 @@ See [WiFi Broadcast Limitations](WiFi%20Broadcast%20Limitations.md)
 - H1 recognizes the need to change
 	- H1 detects a weakening signal
 	- Starts scanning for a stronger one
-- Changes [Access Points](LAN%20Architecture/Access%20Point.md) with same SSID
+- Changes [Access Points](802.11%20LAN%20Architecture/Access%20Point.md) with same SSID
 	- H1 disassociates from one and associates with another
 - Switch learns new location
 	- Self-learning mechanism

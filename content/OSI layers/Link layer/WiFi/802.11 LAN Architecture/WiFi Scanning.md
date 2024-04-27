@@ -4,7 +4,7 @@
 2. Association Request frame sent: H1 to selected AP
 3. Association Response frame sent: selected AP to H1
 
-![](LAN%20Architecture/passive-scanning.png)
+![](passive-scanning.png)
 
 ## Active Scanning
 

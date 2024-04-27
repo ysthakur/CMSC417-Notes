@@ -2,7 +2,7 @@
 
 Cell:
 - Covers geographical region
-- [Base Station](../OSI%20layers/Link%20layer/WiFi/LAN%20Architecture/Base%20Station.md) (BS): Analogous to 802.11 [AP](LAN%20Architecture/Access%20Point.md)
+- [Base Station](../OSI%20layers/Link%20layer/WiFi/802.11%20LAN%20Architecture/Base%20Station.md) (BS): Analogous to 802.11 [AP](../OSI%20layers/Link%20layer/WiFi/802.11%20LAN%20Architecture/Access%20Point.md)
 - Mobile users attach to network through BS
 - Air-interface: Physical and link layer protocol between mobile and BS
 
