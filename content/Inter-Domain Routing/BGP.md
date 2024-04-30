@@ -42,3 +42,5 @@ BGP session:
 - Based on AS2 policy, AS2 router 2a advertises (via eBGP) path `AS2,AS3,X` to AS1 router 1c
 
 ![](Pasted%20image%2020240430150634.png)
+
+==TODO take notes on BGP path advertisement (see lecture 24)==
