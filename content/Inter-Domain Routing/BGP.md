@@ -65,7 +65,7 @@ Router may learn about more than one route to destination AS, selects route base
 - Nontransit AS might be a corporate or campus network
 	- Could be a content provider
 
-Traffic **never** flows from an ISP (transit network) through a nontransit AS to another ISP (also a transit network)
+Traffic is **never** supposed to flow from an ISP (transit network) through a nontransit AS to another ISP (also a transit network)
 
 ### Selective Transit
 
@@ -75,15 +75,34 @@ Most transit networks transit in a selective manner
 
 ### Customers and Providers
 
-==TODO see slide==
+Customer pays provider for access to the Internet
 
-Customers don't always need BGP ==todo==
+![](../Pasted%20image%2020240503004013.png)
 
-Customer-Provider Hierarchy ==todo==
 
-The Peering Relationship ==todo==
+Customers don't always need BGP
+- Static routing is the most common way of connecting an autonomous routing domain to the Internet
 
-Peering provides shortcuts ==todo==
+![](../Pasted%20image%2020240503004108.png)
+
+Customer-provider hierarchy:
+![](../Pasted%20image%2020240503004316.png)
+
+### The Peering Relationship
+
+- Peers provide transit between their respective customers
+- But they don't provide transit between peers
+- Often don't exchange money to help each other out
+	- If they didn't provide transit between their customers, Internet would become disconnected
+	- Hence, they do it for free
+
+![](../Pasted%20image%2020240503004438.png)
+
+### Peering provides shortcuts
+
+Peering also allows connectivity between the customers of Tier 1 providers
+
+![](../Pasted%20image%2020240503004620.png)
 
 ## BGP Operations Simplified
 
@@ -106,13 +125,55 @@ Most important attributes:
 - `NEXT_HOP`
 - `MULTI_EXIT_DISC`
 - `LOCAL_PREF`
-- ==todo more==
+- `COMMUNITY`
+- `ORIGINATOR_ID`
+- `CLUSTER_LIST`
+
+![](../Pasted%20image%2020240503004721.png)
 
 Attributes are used to select best routes
-- Given multiple routes to the same prefix, a BGP speaker must pick at most **one** best route
+- Given multiple routes to the same prefix, a BGP speaker must pick **at most one** best route
 	- It could reject them all
 
 Next Hop attribute: Every time a route announcement crosses an AS boundary, the Next Hop attribute is changed to the IP address of the border router that announced the route
+
+## Join EGP with IGP for Connectivity
+
+![](../Pasted%20image%2020240503005624.png)
+
+## Implementing customer/provider and peer/peer relationships
+
+Two parts:
+- Enforce transit relationships
+	- Outbound route filtering
+- Enhance order of route preference
+	- Provider < peer < customer
+
+## Import Routes
+
+![](../Pasted%20image%2020240503010146.png)
+
+## Export Routes
+
+![](../Pasted%20image%2020240503010212.png)
+
+## BGP Communities
+
+BGP communities are how routes are colored
+- A community value is 32 bits
+	- By convention, first 16 bits are ASN indicating who is giving it an interpretation
+	- Second 16 bits are community number
+- Community values used for signaling within and between [AS](Autonomous%20System.md)s
+- Very powerful because it has no predefined meaning
+
+Community attribute: a list of community values
+- So one route can belong to multiple communities
+
+Two reserved communities:
+- `no_export` = `0xFFFFFF01`: don't export out of AS
+- `no_advertise` = `0xFFFFFF02`: don't pass to BGP neighbors
+
+## Tweak Tweak Tweak
 
 ==TODO FINISH TAKING NOTES ON 5/2 SLIDES (LEC 25)==
 
