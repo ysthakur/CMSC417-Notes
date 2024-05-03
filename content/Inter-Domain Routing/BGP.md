@@ -4,6 +4,8 @@ tags:
 aliases:
   - Inter-AS Routing
   - Border Gateway Protocol
+  - iBGP
+  - eBGP
 ---
 Border Gateway Protocol (BGP) is the de-facto [Inter-Domain Routing](Inter-Domain%20Routing.md)/EGP protocol
 
@@ -71,22 +73,22 @@ Traffic is **never** supposed to flow from an ISP (transit network) through a no
 
 Most transit networks transit in a selective manner
 
-![](../Pasted%20image%2020240502140801.png)
+![](Pasted%20image%2020240502140801.png)
 
 ### Customers and Providers
 
 Customer pays provider for access to the Internet
 
-![](../Pasted%20image%2020240503004013.png)
+![](Pasted%20image%2020240503004013.png)
 
 
 Customers don't always need BGP
 - Static routing is the most common way of connecting an autonomous routing domain to the Internet
 
-![](../Pasted%20image%2020240503004108.png)
+![](Pasted%20image%2020240503004108.png)
 
 Customer-provider hierarchy:
-![](../Pasted%20image%2020240503004316.png)
+![](Pasted%20image%2020240503004316.png)
 
 ### The Peering Relationship
 
@@ -96,13 +98,13 @@ Customer-provider hierarchy:
 	- If they didn't provide transit between their customers, Internet would become disconnected
 	- Hence, they do it for free
 
-![](../Pasted%20image%2020240503004438.png)
+![](Pasted%20image%2020240503004438.png)
 
 ### Peering provides shortcuts
 
 Peering also allows connectivity between the customers of Tier 1 providers
 
-![](../Pasted%20image%2020240503004620.png)
+![](Pasted%20image%2020240503004620.png)
 
 ## BGP Operations Simplified
 
@@ -129,7 +131,7 @@ Most important attributes:
 - `ORIGINATOR_ID`
 - `CLUSTER_LIST`
 
-![](../Pasted%20image%2020240503004721.png)
+![](Pasted%20image%2020240503004721.png)
 
 Attributes are used to select best routes
 - Given multiple routes to the same prefix, a BGP speaker must pick **at most one** best route
@@ -139,7 +141,7 @@ Next Hop attribute: Every time a route announcement crosses an AS boundary, the 
 
 ## Join EGP with IGP for Connectivity
 
-![](../Pasted%20image%2020240503005624.png)
+![](Pasted%20image%2020240503005624.png)
 
 ## Implementing customer/provider and peer/peer relationships
 
@@ -151,11 +153,11 @@ Two parts:
 
 ## Import Routes
 
-![](../Pasted%20image%2020240503010146.png)
+![](Pasted%20image%2020240503010146.png)
 
 ## Export Routes
 
-![](../Pasted%20image%2020240503010212.png)
+![](Pasted%20image%2020240503010212.png)
 
 ## BGP Communities
 
@@ -175,5 +177,77 @@ Two reserved communities:
 
 ## Tweak Tweak Tweak
 
-==TODO FINISH TAKING NOTES ON 5/2 SLIDES (LEC 25)==
+For inbound traffic:
+- Filter **outbound** routes
+- Tweak attributes on **outbound** routes in the hope of influencing your neighbor's best route selection
+
+For outbound traffic:
+- Filter **inbound** routes
+- Tweak attributes on **inbound** routes to influence best route selection
+
+> [!note]
+> In general, an AS has more control over outbound traffic
+
+## Route Selection Summary
+
+![](Pasted%20image%2020240503161112.png)
+
+## Local Preference Attribute
+
+- Local preference attribute only used in iBGP
+- Higher Local Preference values are preferred
+
+![](Pasted%20image%2020240503162317.png)
+
+## Implementing backup links with local preference (outbound traffic)
+
+Forces **outbound** traffic to take primary link, unless link is down
+
+![](bgp-backup-links.png)
+
+Multihomed Backups (outbound traffic):
+![](bgp-multihomed-backups.png)
+## `AS_PATH` Attribute
+
+![](as_path_attribute.png)
+
+## Interdomain Loop Prevention
+
+Border gateway will never accept a route with `ASPATH` containing itself
+- e.g. gateway at AS 877 will never accept a route with `ASPATH = 1 333 877 7018`, because that would cause a cycle
+
+## Traffic often follows AS_PATH, but not always
+
+Traffic following AS Path:
+![](Pasted%20image%2020240503172735.png)
+
+Traffic **not** following AS Path:
+![](Pasted%20image%2020240503172723.png)
+
+## Shorter doesn't always mean shorter
+
+Even if the AS Path from some AS `X` is shorter than the AS Path from another AS `Y`, within the AS `X`, a longer path might actually be taken
+- So a shorter AS Path doesn't always mean a shorter path
+
+![](Pasted%20image%2020240503172918.png)
+
+## Shedding Inbound Traffic with `AS_PATH` Padding Hack
+
+- Can repeat AS in `AS_PATH` in backup link
+- Padding will usually force inbound traffic from AS 1 tot ake primary link
+
+![](Pasted%20image%2020240503180557.png)
+
+But padding may not shut off all traffic (as in the example below)
+- AS 3 will send traffic on the backup link because it prefers customer routes, and local preference is prioritized over `AS_PATH` length
+- Padding can still be used as a form of load balancing
+
+![](Pasted%20image%2020240503181719.png)
+
+The `COMMUNITY` attribute can help in that case:
+![](Pasted%20image%2020240503181800.png)
+
+## Hot Potato Routing
+
+See [Hot Potato Routing](Hot%20Potato%20Routing.md)
 
