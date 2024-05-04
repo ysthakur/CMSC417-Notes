@@ -7,10 +7,10 @@ tags:
 - Enables encapsulation
 
 Example of layered network system:
-1. Application programs ([Application layer](Application%20layer.md))
-2. Process-to-process channels ([Transport layer](Transport%20layer/Transport%20layer.md))
-3. Host-to-host connectivity ([Network layer](Network%20layer/Network%20layer.md) and [Link layer](Link%20layer/Link%20layer.md) (?))
-4. Hardware ([Physical layer](Physical%20layer/Physical%20layer.md))
+1. Application programs ([Application Layer](OSI%20layers/Application%20Layer.md))
+2. Process-to-process channels ([Transport Layer](OSI%20layers/Transport%20Layer.md))
+3. Host-to-host connectivity ([Network Layer](OSI%20layers/Network%20Layer/Network%20Layer.md) and [Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md) (?))
+4. Hardware ([Physical Layer](OSI%20layers/Physical%20Layer.md))
 
 ![Internet architecture](../img/internet-architecture.png)
 
@@ -23,28 +23,28 @@ Example of layered network system:
 
 ### Application layer
 
-![Application layer](./Application%20layer.md)
+![Application Layer](OSI%20layers/Application%20Layer.md)
 
 ### Presentation layer
 
-![Presentation layer](Presentation%20layer.md)
+![Presentation Layer](OSI%20layers/Presentation%20Layer.md)
 
 ### Session layer
 
-![Session layer](Session%20layer.md)
+![Session Layer](OSI%20layers/Session%20Layer.md)
 
 ### Transport layer
 
-![Transport layer](Transport%20layer/Transport%20layer.md)
+![Transport Layer](OSI%20layers/Transport%20Layer.md)
 
 ### Network layer
 
-![Network layer](./Network%20layer/Network%20layer.md)
+![Network Layer](OSI%20layers/Network%20Layer/Network%20Layer.md)
 
 ### Link layer
 
-![Link layer](Link%20layer/Link%20layer.md)
+![Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md)
 
 ### Physical layer
 
-![Physical layer](Physical%20layer/Physical%20layer.md)
+![Physical Layer](OSI%20layers/Physical%20Layer.md)

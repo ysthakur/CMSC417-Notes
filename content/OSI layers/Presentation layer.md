@@ -5,4 +5,4 @@ tags:
 - Concerned with format of data exchanged between peers
 	- Includes data encryption
 
-Considered part of [Transport layer](./Transport%20layer/Transport%20layer.md)
+Considered part of [Transport Layer](OSI%20layers/Transport%20Layer.md)

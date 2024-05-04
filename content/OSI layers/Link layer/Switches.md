@@ -4,13 +4,13 @@ aliases:
   - Switch
 ---
 To allow multiple computers to share one point
-- Essentially the same as a [bridge](Bridges.md),
+- Essentially the same as a [bridge](OSI%20layers/Link%20Layer/Bridges.md),
 - but typically used to connect individual hosts rather than LANs
 
-One way of switching is [[Circuit switching]], which was used for telephones but doesn't work well for the [[Internet]]
+One way of switching is [[OSI layers/Link Layer/Circuit switching]], which was used for telephones but doesn't work well for the [[Internet]]
 
-Instead, [[Packet switching]] is used
- ![[switching.png]]
+Instead, [[OSI layers/Link Layer/Packet switching]] is used
+ ![[OSI layers/Link Layer/switching.png]]
 
 ## Traffic Isolation
 
@@ -34,7 +34,7 @@ When frame arrives with unfamiliar destination:
 - Forward the frame to all the interfaces except for the ones where the frame arrived
 - Hopefully, this case won't happen often
 
-## Advantages over [Hubs/Repeaters](../Physical%20layer/Physical%20layer.md)
+## Advantages over [Hubs/Repeaters](OSI%20layers/Physical%20Layer.md)
 
 - Only forward frames as needed
 	- Avoid unnecessary load on segments

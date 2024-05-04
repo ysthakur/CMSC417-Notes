@@ -3,7 +3,7 @@ aliases:
   - Carrier Sense Multiple Access
   - CSMA/CD
 ---
-A [Multi-Access Protocol](Multi-Access%20Protocol.md)
+A [Multi-Access Protocol](OSI%20layers/Link%20Layer/Multi-Access%20Protocol.md)
 
 Carrier Sense Multiple Access (CSMA) is like human conversation:
 - Carrier sense:
@@ -31,7 +31,7 @@ Worst-case scenario of collision:
 - Formula for minimum packet size (P) or maximum length (L):
 	- $2L/c = 2d = P/B$, where $c$ is the speed of propagation
 
-![What happens on collision](csma-cd-collision.png)
+![What happens on collision](OSI%20layers/Link%20Layer/csma-cd-collision.png)
 
 - When receiver detects collision
 	- Stop sending
@@ -43,9 +43,9 @@ Worst-case scenario of collision:
 1. Cannot detect all collisions
 	- Hidden terminal problem
 		- Happens because 802.11 uses physical carrier sensing, which is susceptible to the hidden terminal problem
-		- [Virtual Carrier Sensing](Virtual%20Carrier%20Sensing.md) can help with that
+		- [Virtual Carrier Sensing](OSI%20layers/Link%20Layer/Virtual%20Carrier%20Sensing.md) can help with that
 	- Signal strength fades over distance
-	- (see [WiFi Broadcast Limitations](OSI%20layers/Link%20layer/WiFi/WiFi%20Broadcast%20Limitations.md) for more info)
+	- (see [WiFi Broadcast Limitations](WiFi/WiFi%20Broadcast%20Limitations.md) for more info)
 2. Cannot listen while sending
 	- Strength of received signal is much smaller
 	- Expensive to build hardware that detects collisions

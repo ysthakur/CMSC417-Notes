@@ -1,1 +1,0 @@
-![](adhoc-wireless-lan.png)

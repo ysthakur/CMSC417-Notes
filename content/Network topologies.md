@@ -12,5 +12,5 @@
     - Multiple access
         - Shared channel, not totally centralized
         - This is what the [[Internet]] uses
-        - To make sure every computer gets its chance to use the network, uses [[OSI layers/Link layer/Switches]]
+        - To make sure every computer gets its chance to use the network, uses [[OSI layers/Link Layer/Switches]]
         - ![Multiple access](img/multiple_access.png)

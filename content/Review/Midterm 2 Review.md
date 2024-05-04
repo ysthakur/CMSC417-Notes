@@ -1,6 +1,6 @@
-## [[IP]] (Chapter 3, Section 3.2 (?))
+## [[OSI layers/Network Layer/IP/IP]] (Chapter 3, Section 3.2 (?))
 
-### [CIDR](../OSI%20layers/Network%20layer/IP/CIDR.md) (Section 3.2.5)
+### [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md) (Section 3.2.5)
 
 - Classless Inter-Domain Routing
 - Variable length network prefixes
@@ -36,7 +36,7 @@
 
 - Packet is encapsulated (and encrypted) at Gateway A and decapsulated (and decrypted) at Gateway B
 
-### Basics of [IPv6](../OSI%20layers/Network%20layer/IP/IPv6.md)
+### Basics of [IPv6](OSI%20layers/Network%20Layer/IP/IPv6.md)
 ==TODO IMPORTANT==
 
 Main differences from IPv4:
@@ -44,13 +44,13 @@ Main differences from IPv4:
 - No header checksum (left for application layer)
 - No fragmenting - if packet exceeds MTU, it's dropped
 
-## [Transport layer](../OSI%20layers/Transport%20layer/Transport%20layer.md) protocols (Chapters 5 and 6)
+## [Transport Layer](OSI%20layers/Transport%20Layer.md) protocols (Chapters 5 and 6)
 
 ### Transport layer mux/demux (Section 5.1 and class slides)
 
 ### [UDP](../UDP.md) (Section 5.1)
 
-### [TCP](../OSI%20layers/Transport%20layer/TCP/TCP.md) (Chapter 5)
+### [TCP](TCP/TCP.md) (Chapter 5)
 
 #### Reliable byte stream (Section 5.2)
 
@@ -58,42 +58,42 @@ Main differences from IPv4:
 
 #### [ARQ](../ARQ/ARQ.md) protocols: stop-and-wait, sliding window (Section 5.2.4 and class slides)
 
-#### [Cumulative ACK](../OSI%20layers/Transport%20layer/TCP/Cumulative%20ACK.md) (Section 6.3.2, 6.3.3, class slides)
+#### [Cumulative ACK](TCP/Cumulative%20ACK.md) (Section 6.3.2, 6.3.3, class slides)
 ==TODO important==
 
 #### TCP flow control (Section 5.2.4)
 ==TODO important==
 
-#### [Silly window syndrome](../OSI%20layers/Transport%20layer/TCP/Silly%20window%20syndrome.md), [Nagle's algorithm](../OSI%20layers/Transport%20layer/TCP/Nagle's%20algorithm.md) (Section 5.2.5)
+#### [Silly window syndrome](TCP/Silly%20window%20syndrome.md), [Nagle's algorithm](TCP/Nagle's%20algorithm.md) (Section 5.2.5)
 - Window gets smaller and smaller
 
 #### Karn-Partridge Algorithm (Section 5.2.6)
 
-#### [Congestion Control](../OSI%20layers/Transport%20layer/TCP/Congestion/TCP%20Congestion.md) (Chapter 6)
+#### [Congestion Control](TCP/Congestion/TCP%20Congestion.md) (Chapter 6)
 
 ==TODO important, get better understanding==
 
 **AIMD protocol** (Section 6.3.1)
 
 **Drop-tail FIFO queue** (Section 6.2.1)
-- See [Queue Management](../OSI%20layers/Transport%20layer/TCP/Queue%20Management/Queue%20Management.md)
+- See [Queue Management](TCP/Queue%20Management/Queue%20Management.md)
 
-**[Slow start](../OSI%20layers/Transport%20layer/TCP/Congestion/Slow%20start.md)** (Section 6.3.2)
+**[Slow start](TCP/Congestion/Slow%20start.md)** (Section 6.3.2)
 
-**[Fast Retransmit + Fast Recovery](../OSI%20layers/Transport%20layer/TCP/Fast%20Retransmit%20+%20Fast%20Recovery.md)** (Section 6.3.3)
+**[Fast Retransmit + Fast Recovery](TCP/Fast%20Retransmit%20+%20Fast%20Recovery.md)** (Section 6.3.3)
 
 - Fast retransmit: When 3 DUP ACKs received, retransmit lost packet without waiting for timeout
-- Fast recovery: When fast retransmit is triggered, instead of going into [Slow start](../OSI%20layers/Transport%20layer/TCP/Congestion/Slow%20start.md), just halve CWND
+- Fast recovery: When fast retransmit is triggered, instead of going into [Slow start](TCP/Congestion/Slow%20start.md), just halve CWND
 
-**[TCP Variants](../OSI%20layers/Transport%20layer/TCP/TCP%20Variants.md) and [Router-Assisted Congestion Control](../OSI%20layers/Transport%20layer/TCP/Congestion/Router-Assisted%20Congestion%20Control.md)** (Chapters 5 and 6)
+**[TCP Variants](TCP/TCP%20Variants.md) and [Router-Assisted Congestion Control](TCP/Congestion/Router-Assisted%20Congestion%20Control.md)** (Chapters 5 and 6)
 
-**[TCP Vulnerabilities](../OSI%20layers/Transport%20layer/TCP/TCP%20Vulnerabilities.md)** (Mentioned research paper and class slides)
+**[TCP Vulnerabilities](TCP/TCP%20Vulnerabilities.md)** (Mentioned research paper and class slides)
 
 ## Problem Solving
 
-1. [CIDR](../OSI%20layers/Network%20layer/IP/CIDR.md)
+1. [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md)
 2. [ICMP](../ICMP/ICMP.md), [Traceroute](../ICMP/Traceroute.md)
-3. 3-way handshake for TCP: [TCP Handshake](../OSI%20layers/Transport%20layer/TCP/TCP%20Handshake.md)
+3. 3-way handshake for TCP: [TCP Handshake](TCP/TCP%20Handshake.md)
 4. Calculating header fields for TCP segments/packets and ACKs
 5. Throughput calculation for [ARQ](../ARQ/ARQ.md) protocols
 6. Calculating advertised window

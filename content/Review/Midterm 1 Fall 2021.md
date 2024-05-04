@@ -6,14 +6,14 @@ From [Past Exams/s21-0.pdf](Past%20Exams/s21-0.pdf)
 ## Nomenclature
 
 - Autonomous system: ==TODO==
-- [CIDR](../OSI%20layers/Network%20layer/IP/CIDR.md): Classless Inter-Domain Routing
+- [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md): Classless Inter-Domain Routing
 - Multi-homed AS: ==TODO==
 - Poisoned Reverse: ==TODO==
 - Selective ACK (SACK): ==TODO==
 
 ## Routing
 
-#### List two advantages of [Link State Routing](../OSI%20layers/Network%20layer/Routing/Link%20State%20Routing.md) over [Distance Vector Routing](../OSI%20layers/Network%20layer/Routing/Distance%20Vector%20Routing.md)
+#### List two advantages of [Link State Routing](OSI%20layers/Network%20Layer/Routing/Link%20State%20Routing.md) over [Distance Vector Routing](OSI%20layers/Network%20Layer/Routing/Distance%20Vector%20Routing.md)
 ==TODO==
 
 #### Give an example that shows the difference between regular Distance Vector (DV) and DV with Split Horizon
@@ -53,7 +53,7 @@ MTU of x means an IP datagram of total length x can be sent over the link
 
 ### IP reassembly code receives a datagram with previously unseen Identification=417, Total Len 1044 bytes, MF flag=1, and offset=8191. How should this datagram be processed?
 
-## [CIDR](../OSI%20layers/Network%20layer/IP/CIDR.md), BGP
+## [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md), BGP
 
 ### What is the difference between a stub and a transit AS?
 Not covered.

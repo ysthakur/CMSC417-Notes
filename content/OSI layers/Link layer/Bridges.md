@@ -3,6 +3,6 @@
 	2. Looks up destination in table
 	3. Forwards frame to appropriate segment
 - Each segment can carry its own traffic
-- Similar to [Switches](Switches.md)
+- Similar to [Switches](OSI%20layers/Link%20Layer/Switches.md)
 
-![Bridge](bridge.png)
+![Bridge](OSI%20layers/Link%20Layer/bridge.png)

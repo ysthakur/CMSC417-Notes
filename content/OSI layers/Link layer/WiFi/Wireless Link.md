@@ -1,3 +1,0 @@
-- Typically used to connect mobiles to base station
-- Also used as backbone link
-- [Multiple Access Protocol](../Multi-Access%20Protocol.md) coordinates link access

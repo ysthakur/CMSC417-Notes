@@ -1,8 +1,0 @@
-- Multiple channels at different frequencies
-	- Network administrator chooses frequency for [Access Point](Access%20Point.md) (AP)
-	- Interference if channel is same as neighboring AP
-- Access Points send out periodic beacon frames
-	- Containing AP's [SSID](SSID.md) and [MAC Address](../../MAC%20Address.md)
-	- Host scans channels, listening for beacon frames
-	- Host selects an AP to associate with, sends associate request
-	- AP responds with association response

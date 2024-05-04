@@ -7,7 +7,7 @@ From [s21-01](Past%20Exams/s21-01.pdf)
 3. What is the maximum end-to-end throughput you could achieve on a 1 Gbps, 250ms RTT link, with send window-size ≤ 40 maximum-sized segments, segment size ≤ 1250 bytes. Show your work. ==TODO==
 4. idk
 
-## 3. [TCP](../OSI%20layers/Transport%20layer/TCP/TCP.md)
+## 3. [TCP](TCP/TCP.md)
 1. What is TCP Fast Retransmit?
 2. idk
 3. What is the maximum value of TCP's window scale? Why? ==TODO==

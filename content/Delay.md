@@ -2,7 +2,7 @@
 aliases:
   - Latency
 ---
-Four sources of delay if you use [packet switching](OSI%20layers/Link%20layer/Packet%20switching.md):
+Four sources of delay if you use [packet switching](OSI%20layers/Link%20Layer/Packet%20switching.md):
 - **Transmission delay**: How fast the router can send data to the network
 	- Transmission delay = L/R, where L is packet length (bits) and R is bandwidth (bits per second)
 	- Limited [bandwidth](Bandwidth.md) is biggest cause of transmission delay

@@ -1,12 +1,12 @@
 - 48-bit flat address that is locally unique
 - Used locally to get frame from one interface to another physically-connected interface (inside the same network)
-- Used at [Link layer](OSI%20layers/Link%20layer/Link%20layer.md) level
+- Used at [Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md) level
 - Manufacturer buys portion of MAC address space to assure uniqueness
 - Burned in NIC ROM, sometimes can be set in software
 
 ## MAC Addresses vs IP Addresses
 
-[IP Addresses](OSI%20layers/Network%20layer/IP/IP%20Addresses.md) are used for communicating between networks, MAC addresses are used for communicating between machines within same network
+[IP Addresses](OSI%20layers/Network%20Layer/IP/IP%20Addresses.md) are used for communicating between networks, MAC addresses are used for communicating between machines within same network
 
 Analogy:
 - MAC addresses are like SSNs (shows identity, unique), whereas IP address are like postal addresses (can be changed)

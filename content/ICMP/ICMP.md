@@ -2,7 +2,7 @@
 aliases:
   - Internet Control Message Protocol
 ---
-Internet Control Message Protocol (ICMP) defines a collection of error messages that are sent back to the source host whenever a router or host is unable to process an [IP](OSI%20layers/Network%20layer/IP/IP.md) datagram successfully.
+Internet Control Message Protocol (ICMP) defines a collection of error messages that are sent back to the source host whenever a router or host is unable to process an [IP](OSI%20layers/Network%20Layer/IP/IP.md) datagram successfully.
 
 Examples of error messages:
 - Destination host unreachable due to link/node failure

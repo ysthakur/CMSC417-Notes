@@ -1,5 +1,5 @@
 Strategy:
-- Every [IP](IP.md) datagram contains destination's address
+- Every [IP](OSI%20layers/Network%20Layer/IP/IP.md) datagram contains destination's address
 - If directly connected to destination network, then forward to host
 - If not directly connected to destination network, then forward to some router
 - Forwarding table maps network number into next hop

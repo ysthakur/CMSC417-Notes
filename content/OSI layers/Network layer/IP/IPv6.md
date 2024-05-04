@@ -1,4 +1,4 @@
-[IP](IP.md)
+[IP](OSI%20layers/Network%20Layer/IP/IP.md)
 
 128-bit address:
 - Eight 16-bit chunks

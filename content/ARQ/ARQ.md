@@ -3,7 +3,7 @@ aliases:
   - Automatic Repeat Query
   - Automatic Repeat Request
 ---
-ARQ (Automatic Repeat Query, a.k.a. Automatic Repeat reQuest) is an error-control method to ensure reliable data transmission (used by [TCP](../OSI%20layers/Transport%20layer/TCP/TCP.md))
+ARQ (Automatic Repeat Query, a.k.a. Automatic Repeat reQuest) is an error-control method to ensure reliable data transmission (used by [TCP](TCP/TCP.md))
 
 - Uses ACK messages and timeouts
 - Receiver sends ACK when it receives packet

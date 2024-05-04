@@ -10,6 +10,6 @@ Cons:
   - This is a deal-breaker
 - Circuit segment idle if there is not enough data
 
-So this is not appropriate for the Internet - we use [Packet switching](OSI%20layers/Link%20layer/Packet%20switching.md) instead
+So this is not appropriate for the Internet - we use [Packet switching](OSI%20layers/Link%20Layer/Packet%20switching.md) instead
 
-![circuit switching](circuit%20switching.png)
+![circuit switching](OSI%20layers/Link%20Layer/circuit%20switching.png)
