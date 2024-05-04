@@ -10,3 +10,7 @@ Peer-to-peer file sharing protocol
 - **Peer**: One of the computers in the swarm
 - **Tracker**: A central server that keeps track of which computers in the swarm
 - **Seeders**: Peers that have the entire file but are good enough to stick around and continue uploading
+
+## Torrent Files
+
+See [Torrent Files](BitTorrent/Torrent%20Files.md)
