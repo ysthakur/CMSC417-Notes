@@ -13,4 +13,4 @@
 3. Association Request frame sent: H1 to selected AP
 4. Association Response frame sent: selected AP to H1
 
-![](../../../../active-scanning.png)
+![](active-scanning.png)

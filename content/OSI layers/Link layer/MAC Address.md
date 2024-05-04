@@ -1,6 +1,6 @@
 - 48-bit flat address that is locally unique
 - Used locally to get frame from one interface to another physically-connected interface (inside the same network)
-- Used at link layer level
+- Used at [Link layer](OSI%20layers/Link%20layer/Link%20layer.md) level
 - Manufacturer buys portion of MAC address space to assure uniqueness
 - Burned in NIC ROM, sometimes can be set in software
 

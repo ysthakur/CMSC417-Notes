@@ -5,8 +5,8 @@ tags:
 ## Modes
 
 Two modes:
-- [Infrastructure Mode](802.11%20LAN%20Architecture/Infrastructure%20Mode.md)
-- [Ad-hoc Mode](802.11%20LAN%20Architecture/Ad-hoc%20Mode.md)
+- [Infrastructure Mode](./802.11%20LAN%20Architecture/Infrastructure%20Mode.md)
+- [Ad-hoc Mode](./802.11%20LAN%20Architecture/Ad-hoc%20Mode.md)
 
 ## High Bit Error Rate
 
