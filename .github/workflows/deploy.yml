@@ -29,9 +29,11 @@ jobs:
           git clone https://github.com/jackyzha0/quartz.git
       - name: Copy content and config over to Quartz repo
         run: |
-          cp -r ./content/* quartz/content/
-          cp quartz.config.ts quartz/
-          cp quartz.layout.ts quartz/
+          # Don't include review notes
+          rm -rf ./content/Review/*
+          mv ./content/* quartz/content/
+          mv quartz.config.ts quartz/
+          mv quartz.layout.ts quartz/
       - name: Install Quartz and dependencies
         working-directory: ./quartz
         run: |
