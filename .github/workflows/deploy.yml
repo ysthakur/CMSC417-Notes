@@ -30,6 +30,8 @@ jobs:
       - name: Copy content and config over to Quartz repo
         run: |
           cp -r ./content/* quartz/content/
+          # Don't include review notes
+          rm -rf quartz/content/Review
           cp quartz.config.ts quartz/
           cp quartz.layout.ts quartz/
       - name: Install Quartz and dependencies
