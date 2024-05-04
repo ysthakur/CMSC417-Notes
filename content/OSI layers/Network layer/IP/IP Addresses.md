@@ -26,4 +26,4 @@ Hierarchical addressing (IP prefixes):
 
 ## Classful Addressing
 
-![Classful Addressing](Classful%20Addressing.md)
+![Classful Addressing](./Classful%20Addressing.md)
