@@ -45,7 +45,7 @@ Worst-case scenario of collision:
 		- Happens because 802.11 uses physical carrier sensing, which is susceptible to the hidden terminal problem
 		- [Virtual Carrier Sensing](Virtual%20Carrier%20Sensing.md) can help with that
 	- Signal strength fades over distance
-	- (see [WiFi Broadcast Limitations](WiFi/WiFi%20Broadcast%20Limitations.md) for more info)
+	- (see [WiFi Broadcast Limitations](OSI%20layers/Link%20layer/WiFi/WiFi%20Broadcast%20Limitations.md) for more info)
 2. Cannot listen while sending
 	- Strength of received signal is much smaller
 	- Expensive to build hardware that detects collisions

@@ -19,6 +19,7 @@ Types:
 ![Types of Multi-Access Protocols](multi-access-protocols.png)
 
 ![CSMA](OSI%20layers/Link%20layer/CSMA.md)
+
 ## Comparison
 
 |      | FDMA (and CDMA?)        | TDMA                                      | CSMA                            |
