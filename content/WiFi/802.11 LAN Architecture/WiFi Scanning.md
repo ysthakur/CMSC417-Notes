@@ -1,3 +1,5 @@
+[WiFi](WiFi/WiFi.md) hosts can scan for APs either passively or actively
+
 ## Passive Scanning
 
 1. Beacon frames sent from APs

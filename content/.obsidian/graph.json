@@ -29,10 +29,17 @@
       }
     },
     {
-      "query": "path:\"OSI layers/Transport layer/TCP\"  ",
+      "query": "path:\"TCP/\"  ",
       "color": {
         "a": 1,
         "rgb": 4562142
+      }
+    },
+    {
+      "query": "path:BitTorrent  ",
+      "color": {
+        "a": 1,
+        "rgb": 70413
       }
     }
   ],
@@ -47,5 +54,5 @@
   "linkStrength": 1,
   "linkDistance": 30,
   "scale": 0.7069865473452306,
-  "close": true
+  "close": false
 }

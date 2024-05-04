@@ -1,6 +1,6 @@
 ## Sub-Pieces
 
-BitTorrent breaks pieces down further into sub-pieces
+[BitTorrent](BitTorrent/BitTorrent.md) breaks pieces down further into sub-pieces
 - Each sub-piece is about 16KB
 - This is done so that we're always sending data
 	- Otherwise, TCP congestion window might decrease (==TODO why? confirm==)
