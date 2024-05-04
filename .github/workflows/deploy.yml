@@ -31,7 +31,7 @@ jobs:
         run: |
           # Don't include review notes
           rm -rf ./content/Review/*
-          mv -r ./content/* quartz/content/
+          mv ./content/* quartz/content/
           mv quartz.config.ts quartz/
           mv quartz.layout.ts quartz/
       - name: Install Quartz and dependencies
