@@ -1,9 +1,9 @@
 ---
-aliases:
-  - BitTorrent Resource Allocation
-  - Tit-for-tat
+aliases: []
 ---
-Choking is when you refuse to upload to a peer
+## Choking
+
+**Choking** is when you refuse to upload to a peer
 - But you can still download from them
 - Principle: upload to peers who have uploaded to us
 	- Tit-for-tat algorithm
@@ -27,6 +27,14 @@ Optimistic unchoking is when you have 1 additional unchoked peer whose download 
 Why?
 - If you don't optimistically unchoke peers, then you won't ever upload to them, so they won't ever upload to you
 - Optimistic unchoking also allows free riders to download some data, though very slowly
+
+## Snubbing
+
+If the client doesn't receive anything from a particular peer for 60 seconds, assume that it has been **snubbed** by that peer
+
+Anti-snubbing: Follow tit-for-tat
+- Refuse to upload to that peer (unless we're optimistically unchoking it)
+- Also increase the number of optimistic unchokes to find new connections quicker
 
 ---
 
