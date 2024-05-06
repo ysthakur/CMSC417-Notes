@@ -250,4 +250,3 @@ The `COMMUNITY` attribute can help in that case:
 ## Hot Potato Routing
 
 See [Hot Potato Routing](Hot%20Potato%20Routing.md)
-
