@@ -4,25 +4,42 @@ aliases:
 ---
 Domain Name System (DNS)
 - A distributed, hierarchical database
+- Works at the [Application Layer](OSI%20layers/Application%20Layer.md)
+- Maps URLs and email address entered by humans to the IP addresses that are used at lower [OSI layers](OSI%20layers/OSI%20Architecture.md)
 
-## Why not centralize?
-
+Not centralized because it wouldn't scale:
 - Single point of failure
 - Traffic volume
 - Distant centralized database
 - Maintenance
 
-Doesn't scale
+## Kinds of Servers
 
-## TLD, Authoritative DNS Servers
+### Root DNS Servers
 
-- Responsible for .com, .org, etc. and all top-level country domains (uk, fr, ca, etc.)
+- Contacted by local name servers that cannot resolve a name
+- If name mapping not known, gets mapping from authoritative name server
+- Returns mapping to local name server
+
+There are only 13 logical root name servers, but each "server" is replicated many times over the globe
+
+### Top-Level Domain (TLD) DNS Servers
+
+- Responsible for com, org, etc. and all top-level country domains (uk, fr, ca, etc.)
+- For example, Network Solutions maintains servers for the `.com` TLD
+
+### Authoritative DNS Servers
+
+- Organization's own DNS server(s)
+- Provide authoritative hostname to IP mappings for organization's named hosts
+- Can be maintained by organization or service provider
 
 ## Name Resolution
 
 Recursive query:
 - Puts burden of name resolution on contacted name server
-- Heavy load at upper levels of hierarchy
+	- Heavy load at upper levels of hierarchy?
+	- Ameliorated by caching
 - Example:
 	- Host (cs.stanford.edu) requests IP for cs.umd.edu from local DNS server
 	- Local DNS server (dns.cs.stanford.edu) sends request to root DNS server
@@ -33,7 +50,7 @@ Recursive query:
 	- Root DNS server responds back to local DNS server
 	- Local DNS server responds back to original host
 
-- Information is stored at the edge of the network (e.g. clients) rather than core routers
+- Information is stored at the [network edge](Network%20edge.md) (e.g. clients) rather than core routers
 
 ## Caching, Updating Records
 
@@ -79,5 +96,25 @@ Example:
 	- Provide names, IP addresses of authoritative name server (primary and secondary)
 	- Registrar inserts two RRs into .com TLD server:
 		1. `(networkutopia.com, dns1.networkutopia.com, NS)`
-		2. `(dns1.networkutopia.com, 123.4.5.1, A)`
+		2. `(dns1.networkutopia.com, 123.4.5.1, A)` (authoritative server)
 
+## DNS Protocol
+
+Query and reply messages both use the same format
+
+Message header:
+- Identification: 16-bit number for query
+	- Response uses same number
+- Flags:
+	- Query or reply
+	- Recursion desired
+	- Recursion available
+	- Reply is authoritative
+
+Body:
+- Questions section has `(name, type)` fields for a query
+- Answers section has RRs in response to query
+- Authority section has RRs for authoritative servers
+- Additional helpful info at end
+
+![](dns-format.png)
