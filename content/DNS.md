@@ -1,6 +1,8 @@
 ---
 aliases:
   - Domain Name System
+tags:
+  - protocol
 ---
 Domain Name System (DNS)
 - A distributed, hierarchical database
