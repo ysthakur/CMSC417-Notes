@@ -3,7 +3,7 @@ tags:
   - osi-layer
 ---
 - Standardize common types of exchanges
-- e.g. FTP, SMTP, HTTP
+- e.g. FTP, [SMTP](Email/SMTP.md), [HTTP](HTTP/HTTP.md)
 
 Addressing
 - In previous layers, we used IP addresses
@@ -12,4 +12,4 @@ Addressing
 	- Distributed
 	- Hierarchical
 	- At the application layer
-- [DNS](DNS.md)!
+- [DNS](DNS/DNS.md)!

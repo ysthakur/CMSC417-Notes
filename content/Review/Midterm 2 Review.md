@@ -20,7 +20,7 @@
 - Lets you dynamically get the following from a server:
 	- IP address (main point of DHCP)
 	- Address of first-hop router
-	- Name and IP of [DNS](../DNS.md) server
+	- Name and IP of [DNS](DNS/DNS.md) server
 	- Network mask
 
 ### Private address spaces and [NAT](../NAT.md)

@@ -1,3 +1,4 @@
+Reasons for losing [packets](Packet.md):
 - Queue has finite capacity
 - Packets arriving to full buffer must be dropped
 - Lost packet may be retransmitted by previous node, by source end system, or not at all

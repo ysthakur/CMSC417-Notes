@@ -119,4 +119,4 @@ Body:
 - Authority section has RRs for authoritative servers
 - Additional helpful info at end
 
-![](dns-format.png)
+![](DNS/dns-format.png)

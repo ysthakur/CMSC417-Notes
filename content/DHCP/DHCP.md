@@ -13,7 +13,7 @@ DHCP (Dynamic Host Configuration Protocol) lets you dynamically get an address f
 
 In addition to [IP Address](OSI%20layers/Network%20Layer/IP/IP%20Addresses.md), also returns:
 - Address of first-hop router for client
-- Name and IP address of [DNS](../DNS.md) server
+- Name and IP address of [DNS](DNS/DNS.md) server
 - Network mask (to indicate network vs host portion of address)
 
 Steps:

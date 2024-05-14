@@ -2,4 +2,4 @@
 
 In the example below, `example` is also known as a second-level domain
 
-![](parts-of-url.png)
+![](HTTP/parts-of-url.png)

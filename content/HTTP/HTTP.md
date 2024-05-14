@@ -6,13 +6,14 @@ tags:
 ---
 Hyper-Text Transfer Protocol (HTTP)
 - Stateless: Server maintains no information about past client requests
-- Uses TCP (client connects to port 80 on the server)
+- Uses [TCP](TCP/TCP.md) (client connects to port 80 on the server)
+- At [Application Layer](OSI%20layers/Application%20Layer.md)
 
 Review of web stuff:
 - Web pages consist of objects
 - Objects can be HTML files, images, audio files, etc.
 - Web page consists of base HTML file which includes several referenced objects
-- Each object is addressable by a URL
+- Each object is addressable by a [URL](HTTP/URL.md)
 
 Client/server model:
 - Client: Browser that requests, receives, and displays web objects

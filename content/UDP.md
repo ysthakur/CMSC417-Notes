@@ -20,7 +20,7 @@ User Datagram Protocol (UDP) is a [transport layer](OSI%20layers/Transport%20Lay
 Uses for UDP:
 - Streaming multimedia apps
 - Simple query-response protocols:
-	- [DNS](DNS.md)
+	- [DNS](DNS/DNS.md)
 	- [DHCP](DHCP/DHCP.md)
 
 ## Advantages of UDP

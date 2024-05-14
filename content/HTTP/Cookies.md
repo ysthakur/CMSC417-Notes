@@ -1,4 +1,4 @@
-- Passed as HTTP headers
+- Passed as [HTTP](HTTP/HTTP.md) headers
 	- Server sends `Set-Cookie: name=value`
 	- Browser sends `Cookie: name=value`
 

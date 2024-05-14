@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "tag:#protocol  ",
@@ -52,7 +52,7 @@
   "centerStrength": 0.707900207900208,
   "repelStrength": 16.5696465696466,
   "linkStrength": 1,
-  "linkDistance": 30,
-  "scale": 0.7069865473452306,
-  "close": false
+  "linkDistance": 77,
+  "scale": 0.632991939540368,
+  "close": true
 }
