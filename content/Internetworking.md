@@ -1,5 +1,7 @@
 ==TODO this is kinda just dumped here, file it under the appropriate notes==
 
+Link to [Internet](Internet.md) for the graph
+
 Connection between hosts involves:
 1. Addressing
 	- Unique identifier for global addressing

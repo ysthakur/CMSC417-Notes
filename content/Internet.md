@@ -9,9 +9,7 @@
 - Hooks that allow sending and receiving app programs to "connect" to Internet
 - Provides service options, analogous to postal service
 
-- All communication activity on the Internet is governed by [[Protocol]]s
-
-- ==TODO see slides, missed some stuff here==
+- All communication activity on the Internet is governed by [protocols](Protocol.md)
 
 ## Internet structure: network of networks
 

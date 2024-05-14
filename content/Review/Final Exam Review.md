@@ -80,6 +80,8 @@ Expect problem-solving questions
 
 ### [ICMP](../ICMP/ICMP.md) (Section 3.2.8; Ping and Traceroute in class slides)
 
+- A collection of error messages that are sent back to host if
+
 - [Ping](../ICMP/Ping.md) - Use ICMP echo messages
 - [Traceroute](../ICMP/Traceroute.md) - Sends packets with small TTLs so each router sends an ICMP Time Exceeded error message back
 
@@ -164,7 +166,7 @@ Problem solving questions on:
 
 ### Repeater, hubs, [Switches](OSI%20layers/Link%20Layer/Switches.md), [Bridges](OSI%20layers/Link%20Layer/Bridges.md), Routers
 
-### Wireless LANs, [WiFi](Wireless/Wi-Fi/WiFi.md) protocol
+### [Wireless Access Networks](Wireless%20Access%20Networks.md), [WiFi](Wireless/Wi-Fi/WiFi.md) protocol
 
 ### [Mobility](Wireless/Mobility.md) in wireless networks
 
