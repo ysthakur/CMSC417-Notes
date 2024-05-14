@@ -47,15 +47,15 @@ Push resources rather than pull them
 - Client initiates QUIC connection and immediately requests file
 - Server sends back file instead of shaking hands
 
-![](http-quic.png)
+![](HTTP/http-quic.png)
 
 ## HTTP Request Messages
 
 - ASCII, human-readable
 
-![](http-request-example.png)
+![](HTTP/http-request-example.png)
 
-![](http-request-format.png)
+![](HTTP/http-request-format.png)
 
 ## Methods
 
@@ -77,13 +77,9 @@ Two ways to upload form input:
 
 ## HTTP Responses
 
-![](http-resp-example.png)
+![](HTTP/http-resp-example.png)
 
 ### Status Codes
 
 Some sample status codes:
 ==TODO what are the ranges?==
-
-## Cookies
-
-==TODO take notes on cookies==
