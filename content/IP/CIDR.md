@@ -26,7 +26,7 @@ Multi-homing: A host might use multiple providers
 
 ![CIDR multi-homing](../../../img/cidr-multi-homing.png)
 
-- Provider 1 has aggregated the four subnets
+- Provider 1 has [aggregated](Route%20Aggregation.md) the four subnets
 - The yellow address (201.10.6.0/23) is being shared through both Provider 1 and Provider 2
 - ~~Provider 2 may use a different address (e.g. 192.0.0.1) for yellow network~~
 - An address like 201.10.6.17 would match both 201.10.0.0/21 and 201.10.6.0/23

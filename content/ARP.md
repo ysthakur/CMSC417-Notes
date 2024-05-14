@@ -16,7 +16,7 @@ ARP table:
 
 1. A wants to send datagram to B
 	- B's MAC address not in A's ARP table
-2. A broadcasts ARP query packet, containing B's IP address
+2. A [broadcasts](Broadcast.md) ARP query packet, containing B's IP address
 	- Destination MAC address = `FF-FF-FF-FF-FF-FF`
 	- All nodes on LAN receive ARP query
 	- Query includes A's MAC address so B can respond
