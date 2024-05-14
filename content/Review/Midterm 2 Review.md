@@ -1,6 +1,6 @@
-## [[OSI layers/Network Layer/IP/IP]] (Chapter 3, Section 3.2 (?))
+## [[IP/IP]] (Chapter 3, Section 3.2 (?))
 
-### [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md) (Section 3.2.5)
+### [CIDR](IP/CIDR.md) (Section 3.2.5)
 
 - Classless Inter-Domain Routing
 - Variable length network prefixes
@@ -36,7 +36,7 @@
 
 - Packet is encapsulated (and encrypted) at Gateway A and decapsulated (and decrypted) at Gateway B
 
-### Basics of [IPv6](OSI%20layers/Network%20Layer/IP/IPv6.md)
+### Basics of [IPv6](IP/IPv6.md)
 ==TODO IMPORTANT==
 
 Main differences from IPv4:
@@ -91,7 +91,7 @@ Main differences from IPv4:
 
 ## Problem Solving
 
-1. [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md)
+1. [CIDR](IP/CIDR.md)
 2. [ICMP](../ICMP/ICMP.md), [Traceroute](../ICMP/Traceroute.md)
 3. 3-way handshake for TCP: [TCP Handshake](TCP/TCP%20Handshake.md)
 4. Calculating header fields for TCP segments/packets and ACKs

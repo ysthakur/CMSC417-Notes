@@ -3,7 +3,7 @@ aliases:
   - IP Address
 ---
 
-[IP](OSI%20layers/Network%20Layer/IP/IP.md) Addresses (IPv4):
+[IP](IP/IP.md) Addresses (IPv4):
 - A unique 32-bit number
 - Identifies an interface
 - Represented in dotted-quad notation
@@ -26,4 +26,4 @@ Hierarchical addressing (IP prefixes):
 
 ## Classful Addressing
 
-![Classful Addressing](OSI%20layers/Network%20Layer/IP/Classful%20Addressing.md)
+![Classful Addressing](IP/Classful%20Addressing.md)

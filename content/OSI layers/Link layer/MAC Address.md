@@ -6,7 +6,7 @@
 
 ## MAC Addresses vs IP Addresses
 
-[IP Addresses](OSI%20layers/Network%20Layer/IP/IP%20Addresses.md) are used for communicating between networks, MAC addresses are used for communicating between machines within same network
+[IP Addresses](IP/IP%20Addresses.md) are used for communicating between networks, MAC addresses are used for communicating between machines within same network
 
 Analogy:
 - MAC addresses are like SSNs (shows identity, unique), whereas IP address are like postal addresses (can be changed)

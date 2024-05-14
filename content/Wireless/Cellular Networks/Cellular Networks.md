@@ -2,7 +2,7 @@
 
 Cell:
 - Covers geographical region
-- [Base Station](WiFi/802.11%20LAN%20Architecture/Base%20Station.md) (BS): Analogous to 802.11 [AP](WiFi/802.11%20LAN%20Architecture/Access%20Point.md)
+- [Base Station](Wireless/Wi-Fi/802.11%20LAN%20Architecture/Base%20Station.md) (BS): Analogous to 802.11 [AP](Wireless/Wi-Fi/802.11%20LAN%20Architecture/Access%20Point.md)
 - Mobile users attach to network through BS
 - Air-interface: Physical and link layer protocol between mobile and BS
 
@@ -11,7 +11,7 @@ Mobile Switching Center (MSC):
 - Manages call setup
 - Handles mobility
 
-![](cellular-network-architecture.png)
+![](Wireless/Cellular%20Networks/cellular-network-architecture.png)
 
 ## The first hop
 

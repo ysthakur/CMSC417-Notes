@@ -1,4 +1,3 @@
-
 Flows contend for two resources
 1. Link bandwidth
 2. Queue space

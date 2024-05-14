@@ -1,5 +1,5 @@
 Mobility is a spectrum:
-- No mobility: Mobile wireless user, using same [Access Point](WiFi/802.11%20LAN%20Architecture/Access%20Point.md)
+- No mobility: Mobile wireless user, using same [Access Point](Wireless/Wi-Fi/802.11%20LAN%20Architecture/Access%20Point.md)
 - More mobility: Mobile user, connecting/disconnecting from network using DHCP
 - High mobility: Mobile user, passing through multiple access points while maintaining ongoing connections (like cell phone)
 
@@ -62,4 +62,4 @@ End result:
 
 ## Mobility Through Multiple Foreign Networks
 
-![](WiFi/mobility-multiple-foreign-networks.png)
+![](Wireless/mobility-multiple-foreign-networks.png)

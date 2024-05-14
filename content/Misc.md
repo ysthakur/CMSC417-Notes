@@ -1,2 +1,1 @@
-- A **broadcast address** is used to send messages to all devices on network
-	- Always the last IP address of the subnet
+- 

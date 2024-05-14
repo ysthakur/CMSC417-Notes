@@ -7,7 +7,7 @@ Structure of an [Ethernet](Ethernet/Ethernet.md) frame
 	- Adapter passes frame to network-level protocol if destination is local MAC address or broadcast address
 	- Otherwise, adapter discards frame
 - Type: indicates higher level protocol
-	- Usually [IP](OSI%20layers/Network%20Layer/IP/IP.md), but also others
+	- Usually [IP](IP/IP.md), but also others
 - CRC: cyclic redundancy check
 
 ![Ethernet frame structure](Ethernet/ethernet-frame-structure.png)

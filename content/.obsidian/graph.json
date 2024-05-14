@@ -5,15 +5,8 @@
   "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
-    {
-      "query": "tag:#protocol  ",
-      "color": {
-        "a": 1,
-        "rgb": 1779397
-      }
-    },
     {
       "query": "path:Routing  ",
       "color": {
@@ -32,7 +25,7 @@
       "query": "path:\"TCP/\"  ",
       "color": {
         "a": 1,
-        "rgb": 4562142
+        "rgb": 15778114
       }
     },
     {
@@ -41,9 +34,23 @@
         "a": 1,
         "rgb": 70413
       }
+    },
+    {
+      "query": "path:Wireless  ",
+      "color": {
+        "a": 1,
+        "rgb": 5018722
+      }
+    },
+    {
+      "query": "path:IP  ",
+      "color": {
+        "a": 1,
+        "rgb": 2669501
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": -0.3,
   "nodeSizeMultiplier": 2.08139293139293,

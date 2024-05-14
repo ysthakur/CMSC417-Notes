@@ -2,13 +2,13 @@ Global addresses:
 - Properties:
 	- Globally unique
 	- Hierarchical: network + host
-	- 4 billion [IP](OSI%20layers/Network%20Layer/IP/IP.md) addresses, half are A type, 1/4 are B type, 1/8 are C type
+	- 4 billion [IP](IP/IP.md) addresses, half are A type, 1/4 are B type, 1/8 are C type
 
 ![Global address format](img/global-address-format.png)
 
 In the olden days, only fixed allocation sizes:
 
-| Class | Most significant bits | [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md) | Address range | Notes |
+| Class | Most significant bits | [CIDR](IP/CIDR.md) | Address range | Notes |
 | ---- | ---- | ---- | ---- | ---- |
 | A | 0 | /8 | `0.0.0.0`–`127.255.255.255` | 126 different networks possible (0 and 127 reserved) |
 | B | 10 | /16 | `128.0.0.0`–`191.255.255.255` | $2^{14}$ networks possible |
@@ -23,5 +23,5 @@ This is why people use dotted-quad notation
 1. Wastage of addresses
 2. Bigger tables to look up at routers
 
-Enter [Classless Inter-Domain Routing (CIDR)](OSI%20layers/Network%20Layer/IP/CIDR.md)
+Enter [Classless Inter-Domain Routing (CIDR)](IP/CIDR.md)
 

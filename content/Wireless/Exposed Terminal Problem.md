@@ -1,4 +1,4 @@
-Problem with [WiFi](WiFi/WiFi.md)
+Problem with [WiFi](Wireless/Wi-Fi/WiFi.md)
 - B is sending to A, C wants to send to D
 - As C receives B's packets, carrier sense (see [CSMA](OSI%20layers/Link%20Layer/CSMA.md)) would prevent it from sending to D, even though wouldn't interfere
 - [RTS/CTS](OSI%20layers/Link%20Layer/Virtual%20Carrier%20Sensing.md) would help
@@ -6,7 +6,7 @@ Problem with [WiFi](WiFi/WiFi.md)
 	- C knows its transmission wouldn't interfere with A
 	- C is safe to transmit to D
 
-![](WiFi/exposed-terminal.png)
+![](Wireless/exposed-terminal.png)
 
 ## Impact on Higher Layer Protocols
 

@@ -1,3 +1,5 @@
+Link to [TCP](TCP/TCP.md) (==TODO make a proper connection instead==)
+
 Goal: balance throughput and delay
 - Huge buffers minimize drops, but add to queueing delay (thus higher RTT, longer slow start, etc.)
 

@@ -10,7 +10,7 @@ WAN = Wireless Access Network
 Two kinds:
 - Wireless Local Area Networks (LANs):
 	- within building (100 ft)
-	- 802.11b/g/n ([WiFi](WiFi/WiFi.md)): 11, 54, 450 Mbps transmission rate
+	- 802.11b/g/n ([WiFi](Wireless/Wi-Fi/WiFi.md)): 11, 54, 450 Mbps transmission rate
 - Wide-area wireless access:
 	- Provided by telco (cellular) operator, tens of kilometers (TODO confirm "tens of kilometers")
 	- Between 1 and 10 Mbps

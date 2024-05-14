@@ -23,7 +23,7 @@ The "CD" part of CSMA/CD
 - Collision happens when two packets overlap at receiver
 
 > [!note]
-> [Ethernet](Ethernet/Ethernet.md) does collision detection, but not [WiFi](WiFi/WiFi.md)
+> [Ethernet](Ethernet/Ethernet.md) does collision detection, but not [WiFi](Wireless/Wi-Fi/WiFi.md)
 
 Worst-case scenario of collision:
 - Two farthest nodes in the LAN
@@ -37,7 +37,7 @@ Worst-case scenario of collision:
 	- Stop sending
 	- Send jamming signal to ensure collision detection by all nodes in the link
 
-## CSMA for [WiFi](WiFi/WiFi.md)
+## CSMA for [WiFi](Wireless/Wi-Fi/WiFi.md)
 
 802.11 does Collision Avoidance, but cannot do Collision Detection because of these two problems:
 1. Cannot detect all collisions
@@ -45,7 +45,7 @@ Worst-case scenario of collision:
 		- Happens because 802.11 uses physical carrier sensing, which is susceptible to the hidden terminal problem
 		- [Virtual Carrier Sensing](OSI%20layers/Link%20Layer/Virtual%20Carrier%20Sensing.md) can help with that
 	- Signal strength fades over distance
-	- (see [WiFi Broadcast Limitations](WiFi/WiFi%20Broadcast%20Limitations.md) for more info)
+	- (see [WiFi Broadcast Limitations](Wireless/Wi-Fi/WiFi%20Broadcast%20Limitations.md) for more info)
 2. Cannot listen while sending
 	- Strength of received signal is much smaller
 	- Expensive to build hardware that detects collisions

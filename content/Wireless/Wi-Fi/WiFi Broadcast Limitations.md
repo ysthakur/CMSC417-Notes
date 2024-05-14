@@ -7,7 +7,7 @@ Example:
 - B and C hear each other
 - But A and C can't hear each other
 
-![Hidden terminal example](WiFi/hidden-terminal.png)
+![Hidden terminal example](Wireless/hidden-terminal.png)
 
 ### Fading over distance
 
@@ -16,4 +16,4 @@ Example:
 - B and C hear each other
 - But A and C can't hear each other
 
-![](WiFi/wifi-broadcast-strength-fade.png)
+![](Wireless/Wi-Fi/wifi-broadcast-strength-fade.png)

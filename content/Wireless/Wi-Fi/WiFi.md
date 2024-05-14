@@ -7,8 +7,8 @@ A [Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md) protocol
 ## Modes
 
 Two modes:
-- [Infrastructure Mode](WiFi/802.11%20LAN%20Architecture/Infrastructure%20Mode.md)
-- [Ad-hoc Mode](WiFi/802.11%20LAN%20Architecture/Ad-hoc%20Mode.md)
+- [Infrastructure Mode](Wireless/Wi-Fi/802.11%20LAN%20Architecture/Infrastructure%20Mode.md)
+- [Ad-hoc Mode](Wireless/Wi-Fi/802.11%20LAN%20Architecture/Ad-hoc%20Mode.md)
 
 ## High Bit Error Rate
 
@@ -35,7 +35,7 @@ Dealing with bit errors:
 
 ## Broadcast Limitations
 
-See [WiFi Broadcast Limitations](WiFi/WiFi%20Broadcast%20Limitations.md)
+See [WiFi Broadcast Limitations](Wireless/Wi-Fi/WiFi%20Broadcast%20Limitations.md)
 
 ## Mobility Within Same Subnet
 
@@ -45,9 +45,9 @@ See [WiFi Broadcast Limitations](WiFi/WiFi%20Broadcast%20Limitations.md)
 - H1 recognizes the need to change
 	- H1 detects a weakening signal
 	- Starts scanning for a stronger one
-- Changes [Access Points](WiFi/802.11%20LAN%20Architecture/Access%20Point.md) with same SSID
+- Changes [Access Points](Wireless/Wi-Fi/802.11%20LAN%20Architecture/Access%20Point.md) with same SSID
 	- H1 disassociates from one and associates with another
 - Switch learns new location
 	- Self-learning mechanism
 
-![wifi-mobility](WiFi/wifi-mobility.png)
+![wifi-mobility](Wireless/Wi-Fi/wifi-mobility.png)

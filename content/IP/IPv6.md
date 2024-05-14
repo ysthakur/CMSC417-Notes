@@ -1,4 +1,4 @@
-[IP](OSI%20layers/Network%20Layer/IP/IP.md)
+[IP](IP/IP.md)
 
 128-bit address:
 - Eight 16-bit chunks
@@ -6,7 +6,9 @@
 
 Differences from IPv4
 - Has unicast, **anycast**, multicast addressing
-	- No concept of broadcast
+	- No concept of broadcast. In IPv4, a **broadcast address** is used to send messages to all devices on network
+		- Always the last IP address of the subnet
+		- ==TODO this info should belong in IPv4 notes==
 - No header checksum
 	- Application layer protocols have their own checksums, so no need for IP to do it
 - No fragmenting-related options

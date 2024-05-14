@@ -5,7 +5,7 @@ tags:
   - osi-layer
 ---
 - Data transfer between neighboring network elements
-- e.g. [Ethernet](Ethernet/Ethernet.md), 802.11 ([WiFi](WiFi/WiFi.md)), P2P/PPP
+- e.g. [Ethernet](Ethernet/Ethernet.md), 802.11 ([WiFi](Wireless/Wi-Fi/WiFi.md)), P2P/PPP
 - Collects a stream of bits into a larger aggregate called a [frame](Frame)
 - Network adapters, along with device drivers in OS implement the protocol in this layer
 - [Frames](../../Frame.md) are actually delivered to hosts

@@ -3,10 +3,10 @@ aliases:
   - Classless Inter-Domain Routing
   - Classless Addressing
 ---
-Improvement on [Classful Addressing](OSI%20layers/Network%20Layer/IP/Classful%20Addressing.md)
+Improvement on [Classful Addressing](IP/Classful%20Addressing.md)
 
 Uses **variable length subnet masking** - network prefixes have variable length
-- See [Subnets](OSI%20layers/Network%20Layer/IP/Subnets.md) for info on subnet masks
+- See [Subnets](IP/Subnets.md) for info on subnet masks
 
 Example: /8 means the network prefix size is 8 (class A)
 

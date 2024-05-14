@@ -6,7 +6,7 @@ From [Past Exams/s21-0.pdf](Past%20Exams/s21-0.pdf)
 ## Nomenclature
 
 - Autonomous system: ==TODO==
-- [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md): Classless Inter-Domain Routing
+- [CIDR](IP/CIDR.md): Classless Inter-Domain Routing
 - Multi-homed AS: ==TODO==
 - Poisoned Reverse: ==TODO==
 - Selective ACK (SACK): ==TODO==
@@ -53,7 +53,7 @@ MTU of x means an IP datagram of total length x can be sent over the link
 
 ### IP reassembly code receives a datagram with previously unseen Identification=417, Total Len 1044 bytes, MF flag=1, and offset=8191. How should this datagram be processed?
 
-## [CIDR](OSI%20layers/Network%20Layer/IP/CIDR.md), BGP
+## [CIDR](IP/CIDR.md), BGP
 
 ### What is the difference between a stub and a transit AS?
 Not covered.

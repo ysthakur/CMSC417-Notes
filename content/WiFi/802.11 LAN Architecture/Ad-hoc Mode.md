@@ -1,1 +1,0 @@
-![](WiFi/802.11%20LAN%20Architecture/adhoc-wireless-lan.png)
