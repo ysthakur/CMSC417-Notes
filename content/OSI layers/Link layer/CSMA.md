@@ -3,7 +3,7 @@ aliases:
   - Carrier Sense Multiple Access
   - CSMA/CD
 ---
-A [Multi-Access Protocol](OSI%20layers/Link%20Layer/Multi-Access%20Protocol.md)
+CSMA is a [Multi-Access Protocol](OSI%20layers/Link%20Layer/Multi-Access%20Protocol.md)
 
 Carrier Sense Multiple Access (CSMA) is like human conversation:
 - Carrier sense:

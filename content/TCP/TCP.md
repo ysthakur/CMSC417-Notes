@@ -34,6 +34,11 @@ Why does ISN have to be random?
 - To prevent sequence number spoofing?
 - ==TODO==
 
+Incrementing sequence numbers:
+- Increment by 1 if SYN flag set (during handshake)
+- ACK flag doesn't cause increment
+- Increment by 1 for every byte of data
+
 ## What if SYN Packet Gets Lost?
 
 Suppose SYN packet gets lost

@@ -58,6 +58,7 @@ Classless Inter-Domain Routing
 
 Expect problem-solving questions
 
+==TODO look at question 2 on midterm 2 on multihoming==
 
 ### [ARP](../ARP.md) (Section 3.2.6)
 
@@ -73,6 +74,7 @@ Expect problem-solving questions
 	- Address of first-hop router
 	- Name and IP of [DNS](DNS/DNS.md) server
 	- Network mask
+- Each network must have at least one DHCP server or DHCP relay agent
 
 ### Private address spaces and [NAT](../NAT.md)
 
@@ -80,12 +82,12 @@ Expect problem-solving questions
 
 ### [ICMP](../ICMP/ICMP.md) (Section 3.2.8; Ping and Traceroute in class slides)
 
-- A collection of error messages that are sent back to host if
+- A collection of error messages that are sent back to source host if a router or host is unable to process an IP datagram successfully
 
 - [Ping](../ICMP/Ping.md) - Use ICMP echo messages
 - [Traceroute](../ICMP/Traceroute.md) - Sends packets with small TTLs so each router sends an ICMP Time Exceeded error message back
 
-Expect problem solving type questions on this
+Expect problem solving type questions on ICMP and Traceroute
 
 ### [VPN](../VPN.md)s and Tunnels (Section 3.2.9)
 
@@ -108,13 +110,42 @@ Main differences from IPv4:
 
 ## [Transport Layer](OSI%20layers/Transport%20Layer.md) multiplexing and demultiplexing
 ## [UDP](UDP.md)
+
+- Connectionless
+- Provides:
+	- Checksum
+	- Multiplexing based on IP address and port number
+
 ## [TCP](TCP/TCP.md) (Chapter 5)
+
+- [TCP Handshake](TCP/TCP%20Handshake.md)
+	- Used for exchanging ISN
+
+==TODO know how to calculate advertised window for problem solving questions==
+Advertised window:
+- How many bytes receiver has available in buffer
+- Receiver sends in header of ACK messages and during handshake
+- If sender receives 0 window size, periodically sends 1-byte messages to test if receiver window has increased in the meantime
 
 ### Reliable byte stream (Section 5.2)
 
 ### Packet format, flags, sequence number (Section 5.2.2, 5.2.3)
 
 ### [ARQ](../ARQ/ARQ.md) protocols: [Stop and Wait](ARQ/Stop%20and%20Wait.md), [Sliding Window](ARQ/Sliding%20Window.md) (Section 5.2.4 and class slides)
+
+Stop-and-wait:
+- Wait for an ACK before sending out the next packet
+- Really sucky, sliding window is better
+
+Sliding window:
+- Choose a window of size N
+- Send out N packets at once
+- When you receive an ACK, you can move the window forward by 1
+- Two ways to deal with packet loss:
+	- Go-back-N: retransmit the lost packet and every packet after it (in the window)
+	- Selective repeat/selective retransmit: only retransmit lost packets
+
+==TODO learn how to calculate throughput for these two==
 
 ### [Cumulative ACK](TCP/Cumulative%20ACK.md) (Section 6.3.2, 6.3.3, class slides)
 ==TODO important==
@@ -123,13 +154,36 @@ Main differences from IPv4:
 ==TODO important==
 
 ### [Silly window syndrome](TCP/Silly%20window%20syndrome.md), [Nagle's algorithm](TCP/Nagle's%20algorithm.md) (Section 5.2.5)
-- Window gets smaller and smaller
+
+- Suppose a receiver has a really small window
+- Packets have a minimum size due to header
+- Sender sends a packet, window gets smaller, receiver advertises a smaller window
+- Sender sends a smaller packet, window gets even smaller
+- And so on, until the window hits 0 and the actual message is smaller than the header
+- Very inefficient
+- **Nagle's algorithm** reduces the number of small TCP packets (sender-side solution)
+- **Delayed ACK** is a receiver-side solution
 
 ### Karn-Partridge Algorithm (Section 5.2.6)
+
+- Used to help estimate RTT more accurately
+- Three rules:
+	1. Stop taking RTT samples when TCP retransmits
+	2. Start again after a regular transmission/reception
+	3. Each time TCP retransmits, set next timeout to be twice the last timeout value
+- Problem with rules #1 and #2 if delay increases sharply:
+	- TCP would ignore RTT of all retransmitted packets
+	- Estimated RTT may never be updated
+	- Then TCP will continue retransmitting every segment
 
 ### [Congestion Control](TCP/Congestion/TCP%20Congestion.md) (Chapter 6)
 
 ==TODO important, get better understanding==
+
+- TCP detects congestion through packet loss
+	- And packet loss is detected using timeouts or 3 duplicate ACKs
+
+==TODO check out the congestion window graph in midterm 2 (question 5)==
 
 **AIMD protocol** (Section 6.3.1)
 
@@ -148,11 +202,9 @@ Main differences from IPv4:
 **[TCP Vulnerabilities](TCP/TCP%20Vulnerabilities.md)** (Mentioned research paper and class slides)
 
 Problem solving questions on:
-2. 3-way handshake for TCP
-3. Calculating header fields for TCP segments/packets and ACKs
-4. Throughput calculation for ARQ
-5. Calculating advertised window
-6. Observing congestion window behavior
+1. 3-way handshake for TCP
+2. Calculating header fields for TCP segments/packets and ACKs
+4. Observing congestion window behavior
 
 ## Link layer protocols (Chapters 2, 3, 4)
 

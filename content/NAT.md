@@ -1,6 +1,7 @@
 ---
 aliases:
   - Network Address Translation
+  - Private Addresses
 tags:
   - protocol
 ---
@@ -14,6 +15,7 @@ Works using NAT translation table:
 - Each row has WAN side address and corresponding LAN side address
 - Unlike [ARP](ARP.md), entries don't have TTL because NAT has no idea how long it takes for each client to communicate with the DHCP server
 	- ==TODO confirm this==
+	- This Stack Exchange answer actually says they expire: https://superuser.com/a/1571738
 
 NAT implementations must:
 - Replace outgoing datagrams

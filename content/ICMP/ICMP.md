@@ -11,8 +11,8 @@ Examples of error messages:
 - IP header checksum failed
 
 ICMP Redirect Message:
-- From router to a source host
-- With a better router information
+- Sent from router to a source host
+- Contains information for better router
 
 Provides basis for two debugging tools:
 - [Ping](Ping.md)
