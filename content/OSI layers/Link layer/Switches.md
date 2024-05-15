@@ -6,10 +6,11 @@ aliases:
 To allow multiple computers to share one point
 - Essentially the same as a [bridge](OSI%20layers/Link%20Layer/Bridges.md),
 - but typically used to connect individual hosts rather than LANs
+- Like bridges, work at [Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md)
 
-One way of switching is [[OSI layers/Link Layer/Circuit switching]], which was used for telephones but doesn't work well for the [[Internet]]
+One way of switching is [Circuit switching](OSI%20layers/Link%20Layer/Circuit%20switching.md), which was used for telephones but doesn't work well for the [Internet](Internet.md)
 
-Instead, [[OSI layers/Link Layer/Packet switching]] is used
+Instead, [Packet switching](OSI%20layers/Link%20Layer/Packet%20switching.md) is used
  ![[OSI layers/Link Layer/switching.png]]
 
 ## Traffic Isolation
@@ -46,4 +47,4 @@ When frame arrives with unfamiliar destination:
 
 ## Difference between switches and routers
 
-![Switch vs Router](../../Switch%20vs%20Router.md)
+![[Switch vs Router]]

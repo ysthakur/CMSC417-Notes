@@ -13,9 +13,11 @@ tags:
 ### Network architecture, abstractions, and protocol stacks/layers
 
 - [OSI Architecture](OSI%20layers/OSI%20Architecture.md) layers:
-	- Application
-	- Transport
-	- 
+	- [Application Layer](OSI%20layers/Application%20Layer.md) (HTTP, SMTP)
+	- [Transport Layer](OSI%20layers/Transport%20Layer.md) (TCP, UDP)
+	- [Network Layer](OSI%20layers/Network%20Layer/Network%20Layer.md) (IP)
+	- [Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md) (Ethernet, WiFi)
+	- [Physical Layer](OSI%20layers/Physical%20Layer.md) (raw bits on the wire)
 
 ### Resource sharing, [Circuit switching](OSI%20layers/Link%20Layer/Circuit%20switching.md), and [Packet switching](OSI%20layers/Link%20Layer/Packet%20switching.md)
 
@@ -246,6 +248,26 @@ Problem solving questions on:
 
 ### Repeater, hubs, [Switches](OSI%20layers/Link%20Layer/Switches.md), [Bridges](OSI%20layers/Link%20Layer/Bridges.md), Routers
 
+- Physical layer:
+	- Repeaters:
+		- Analog, just amplifies signal
+		- Join LANs together
+	- Hubs:
+		- Regenerates signal, so noise is removed
+		- Joins multiple input lines electrically
+	- Problem: Cannot join segments using different technologies (solved by switches at link layer)
+- Link layer:
+	- [Bridges](OSI%20layers/Link%20Layer/Bridges.md): used to join LANs together
+	- [Switches](OSI%20layers/Link%20Layer/Switches.md):
+		- Similar to bridges, but used to join individual hosts together
+		- ==TODO look at the self-learning stuff==
+		- Advantages over hubs and repeaters:
+			- Only forward frames as necessary
+			- Wider geographic span
+			- Improves privacy
+- Network layer:
+	- Routers
+
 ### [Wireless Access Networks](Wireless%20Access%20Networks.md), [WiFi](Wireless/Wi-Fi/WiFi.md) protocol
 
 - BSS: Basic Service Set
@@ -278,4 +300,4 @@ Problem solving questions on:
 
 - ARQ utilization formulas
 - IP address classes (A, B, C)
-- 
+- TCP variants
