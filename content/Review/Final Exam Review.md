@@ -12,6 +12,11 @@ tags:
 
 ### Network architecture, abstractions, and protocol stacks/layers
 
+- [OSI Architecture](OSI%20layers/OSI%20Architecture.md) layers:
+	- Application
+	- Transport
+	- 
+
 ### Resource sharing, [Circuit switching](OSI%20layers/Link%20Layer/Circuit%20switching.md), and [Packet switching](OSI%20layers/Link%20Layer/Packet%20switching.md)
 
 - Circuit switching has a dedicated channel for each connection

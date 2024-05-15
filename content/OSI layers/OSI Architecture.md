@@ -23,28 +23,28 @@ Example of layered network system:
 
 ### Application layer
 
-![Application Layer](OSI%20layers/Application%20Layer.md)
+![[Application Layer]]
 
 ### Presentation layer
 
-![Presentation Layer](OSI%20layers/Presentation%20Layer.md)
+![[Presentation Layer]]
 
 ### Session layer
 
-![Session Layer](OSI%20layers/Session%20Layer.md)
+![[Session Layer]]
 
 ### Transport layer
 
-![Transport Layer](OSI%20layers/Transport%20Layer.md)
+![[Transport Layer]]
 
 ### Network layer
 
-![Network Layer](OSI%20layers/Network%20Layer/Network%20Layer.md)
+![[Network Layer]]
 
 ### Link layer
 
-![Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md)
+![[Link Layer]]
 
 ### Physical layer
 
-![Physical Layer](OSI%20layers/Physical%20Layer.md)
+![[Physical Layer]]
