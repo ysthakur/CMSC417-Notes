@@ -20,8 +20,11 @@ This is why people use dotted-quad notation
 
 ## Problems with Classful Addressing
 
-1. Wastage of addresses
-2. Bigger tables to look up at routers
+- Wastage of addresses
+- Bigger tables to look up at routers
+	- Because there's a limited number of class A and class B networks, most people will have to use class C networks
+	- But class C networks are not big enough for their purposes
+	- So they'll have to get themselves multiple class C networks instead of just one network of the right size
+	- Hence, more entries in routing tables
 
 Enter [Classless Inter-Domain Routing (CIDR)](IP/CIDR.md)
-

@@ -8,5 +8,5 @@ Receiver calculates advertised window and sends it in [TCP Header](TCP/TCP%20Hea
 
 If advertised window is 0, periodically send 1 byte packets to break deadlock
 
-Effective window (calculated at sender size) is `AdvertisedWindow - (LastByteSent - LastByteACKed)`
+Effective window (calculated at sender side) is `AdvertisedWindow - (LastByteSent - LastByteACKed)`
 

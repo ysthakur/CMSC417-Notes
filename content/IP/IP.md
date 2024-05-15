@@ -46,7 +46,10 @@ Header checksum:
 	- This is used because of hardware limitations
 	- Larger packets occupy a link for longer
 - If packet length is bigger than some router's MTU, need to fragment it
-- Packets get reassembled at destination
+- Packets get reassembled at destination:
+	- If did at router, there'd be additional computation and delay
+	- Packet might fragment again during transit
+	- Different fragments may take different routes, so they may not even be available at intermediate routers
 - 16-bit identifier is used to reassemble them (`Ident` field)
 	- Packets may have duplicate identifiers
 	- To help with this, 2-minute time limit used initially

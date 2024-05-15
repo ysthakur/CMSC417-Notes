@@ -62,6 +62,7 @@ tags:
 - Packet identifier tells you which packet each fragment belonged to
 - Fragment offset field tells you where in the packet each fragment was
 - MF (More Fragments) flag tells you whether the fragment is the last one
+- Reassembly done at destination
 
 ### [IP Addresses](IP/IP%20Addresses.md)
 
