@@ -11,7 +11,7 @@
 ## Architecture
 
 - [Access Point](Wireless/Wi-Fi/802.11%20LAN%20Architecture/Access%20Point.md)
-- Basic Service Set (BSS)
+- Basic Service Set (**BSS**)
 	- Coverage of one AP
 	- AP acts as the master
 	- Identified by [SSID](Wireless/Wi-Fi/SSID.md)

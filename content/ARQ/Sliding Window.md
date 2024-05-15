@@ -32,4 +32,3 @@ Utilization with a window size of 3 (fraction of time sender busy sending):
 $$U_{\text{sender}} = \frac{3 \cdot L/R}{RTT+L/R}$$
 
 With a window size of 3, utilization is 3 times that of [Stop and Wait](Stop%20and%20Wait.md)
-

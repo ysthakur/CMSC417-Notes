@@ -11,8 +11,8 @@ Link State Packet (LSP) contains:
 	- Necessary because node would send out multiple packets, you need to know which one is the latest
 4. A Time-To-Live (TTL) for this packet
 	- To make sure old information is eventually removed from the network
-	- Initially, this used time, but now it's **hop count** instead
-	- Currently, IP uses 64 as default value
+	- Also uses hop count (but doesn't replace time-to-live, that's crucial for deleting outdated information)
+	- Currently, IP uses 64 hops as default value (==for what? hops? seconds?==)
 
 One link state routing protocol (implementation?) is [Open Shortest Path First (OSPF)](OSI%20layers/Network%20Layer/Routing/OSPF.md)
 
@@ -36,9 +36,9 @@ Goals:
 1. Forward LSP to all nodes except the one that sent it
 2. Generate new LSP periodically; increment SEQNO
 3. Start SEQNO at 0 when reboot
-	- Can't maintain state to pick up at the previous SEQNO
+	- Because can't maintain state to pick up at the previous SEQNO
 4. Decrement TTL before flooding it to neighbors
-	- Also age the stored LSP (decrement TTL)
+	- Also age the stored LSP (i.e., decrement TTL)
 	- Discard when TTL hits 0
 
 ## LSP processing flow

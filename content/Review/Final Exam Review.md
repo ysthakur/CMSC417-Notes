@@ -14,6 +14,12 @@ tags:
 
 ### Resource sharing, [Circuit switching](OSI%20layers/Link%20Layer/Circuit%20switching.md), and [Packet switching](OSI%20layers/Link%20Layer/Packet%20switching.md)
 
+- Circuit switching has a dedicated channel for each connection
+- Circuit switching is better for real-time applications
+- But packet switching does better resource sharing among a large number of hosts
+	- Can't make circuit for every single connection
+	- Circuit switching doesn't allow multitasking (can only connect to one website at a time)
+
 ### [Network edge](Network%20edge.md) and [Network core](Network%20core.md)
 
 ### Access networks
@@ -28,7 +34,17 @@ tags:
 
 ### [Distance Vector Routing](OSI%20layers/Network%20Layer/Routing/Distance%20Vector%20Routing.md)
 
+- Uses Bellman-Ford
+
 ### [Link State Routing](OSI%20layers/Network%20Layer/Routing/Link%20State%20Routing.md)
+
+- Each node sends Link State Packets (LSPs)
+	- Packet contains information about the node's neighbor
+	- Has a sequence number that tells you which LSP is newer
+- Each node separately gets an idea of the entire network's topology to calculate the best path
+- Makes routing loops much less likely than DV routing
+
+==todo take notes on count-to-infinity and split horizon and poison reverse (on exam 1, q2.2)==
 
 ## [IP](IP/IP.md)
 
@@ -220,6 +236,8 @@ Problem solving questions on:
 
 ### [Wireless Access Networks](Wireless%20Access%20Networks.md), [WiFi](Wireless/Wi-Fi/WiFi.md) protocol
 
+- BSS: Basic Service Set
+
 ### [Mobility](Wireless/Mobility.md) in wireless networks
 
 ## Intra-AS routing and Inter-AS routing, [BGP](Inter-Domain%20Routing/BGP.md)
@@ -243,3 +261,9 @@ Problem solving questions on:
 - Learning bridge, repeater, hub, switch, and router
 - BGP protocol and attacks
 - [DNS](DNS/DNS.md)
+
+## Stuff for cheat sheet
+
+- ARQ utilization formulas
+- IP address classes (A, B, C)
+- 
