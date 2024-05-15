@@ -22,7 +22,7 @@ tags:
 	7. Access networks (Refer to class slides and notes)
 		- [Home Networks](../Home%20Networks.md)
 		- [Ethernet](Ethernet/Ethernet.md)
-		- [Wireless Access Networks](Wireless%20Access%20Networks.md)
+		- [Wireless Access Networks](Wireless/Wireless%20Access%20Networks.md)
 		==TODO review==
 	8. [Failures](Failures), [Delay](../Delay.md), [Throughput](../Throughput.md), [Bandwidth](../Bandwidth.md) (Section: 1.2.4, 1.5)
 		- Latency/delay is like length of pipe

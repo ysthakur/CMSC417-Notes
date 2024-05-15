@@ -31,6 +31,10 @@ tags:
 
 ### Access networks
 
+- Home networks
+- [Enterprise access networks](Ethernet/Ethernet.md)
+- [Wireless Access Networks](Wireless/Wireless%20Access%20Networks.md)
+
 ### [Failures](Failures.md), [Delay](Delay.md), [Throughput](Throughput.md), [Bandwidth](Bandwidth.md), Delay x Bandwidth
 
 - [Bandwidth vs Throughput](Bandwidth%20vs%20Throughput.md)
@@ -41,7 +45,8 @@ tags:
 
 ### [Distance Vector Routing](OSI%20layers/Network%20Layer/Routing/Distance%20Vector%20Routing.md)
 
-- Uses Bellman-Ford
+- Each node has a table of cost to reach every other node, as well as next hop to get there
+- Uses Bellman-Ford algorithm to find shortest path
 
 ### [Link State Routing](OSI%20layers/Network%20Layer/Routing/Link%20State%20Routing.md)
 
@@ -52,6 +57,21 @@ tags:
 - Makes routing loops much less likely than DV routing
 
 ==todo take notes on count-to-infinity and split horizon and poison reverse (on exam 1, q2.2)==
+
+### Count-to-infinity
+
+Problem:
+- If link goes down/cost increases, other nodes can go into a routing loop
+- Keep increasing cost to the node that is now unreachable/higher cost until it hits infinity
+
+Solutions:
+- Have a small number for infinity and stop counting there
+	- If a node is more than, say, 15 hops away, consider it unreachable
+	- May work for small networks but not bigger ones
+- Split horizon
+	- If node X learned a route from its neighbor Y, it won't send that route back to Y
+- Poison reverse
+	- If node X learned the route to node Z from its neighbor Y, it'll tell Y that node Z is unreachable through X
 
 ## [IP](IP/IP.md)
 
@@ -124,7 +144,6 @@ Expect problem solving type questions on ICMP and Traceroute
 - Packet is encapsulated (and encrypted) at Gateway A and decapsulated (and decrypted) at Gateway B
 
 ### Basics of [IPv6](IP/IPv6.md)
-==TODO IMPORTANT==
 
 Main differences from IPv4:
 - Has unicast, anycast, and multicast, no broadcast
@@ -151,7 +170,6 @@ Main differences from IPv4:
 - [TCP Handshake](TCP/TCP%20Handshake.md)
 	- Used for exchanging ISN
 
-==TODO know how to calculate advertised window for problem solving questions==
 Advertised window:
 - How many bytes receiver has available in buffer
 - Receiver sends in header of ACK messages and during handshake
@@ -175,10 +193,10 @@ Sliding window:
 	- Go-back-N: retransmit the lost packet and every packet after it (in the window)
 	- Selective repeat/selective retransmit: only retransmit lost packets
 
-==TODO learn how to calculate throughput for these two==
-
 ### [Cumulative ACK](TCP/Cumulative%20ACK.md) (Section 6.3.2, 6.3.3, class slides)
-==TODO important==
+
+- If receive packets out of order, send acknowledgment for (last packet that was in order) + 1
+- When sender receives 3 duplicate ACKs, assumes packet lost
 
 ### [TCP Flow Control](TCP/TCP%20Flow%20Control.md) (Section 5.2.4)
 ==TODO important==
@@ -231,6 +249,8 @@ Sliding window:
 
 **[TCP Vulnerabilities](TCP/TCP%20Vulnerabilities.md)** (Mentioned research paper and class slides)
 
+==TODO lower priority==
+
 Problem solving questions on:
 1. 3-way handshake for TCP
 2. Calculating header fields for TCP segments/packets and ACKs
@@ -246,6 +266,8 @@ Problem solving questions on:
 
 ### [Ethernet](Ethernet/Ethernet.md): Architecture, medium access ([CSMA/CD](OSI%20layers/Link%20Layer/CSMA.md))
 
+==TODO learn, but not as important as rest==
+
 ### Repeater, hubs, [Switches](OSI%20layers/Link%20Layer/Switches.md), [Bridges](OSI%20layers/Link%20Layer/Bridges.md), Routers
 
 - Physical layer:
@@ -260,7 +282,6 @@ Problem solving questions on:
 	- [Bridges](OSI%20layers/Link%20Layer/Bridges.md): used to join LANs together
 	- [Switches](OSI%20layers/Link%20Layer/Switches.md):
 		- Similar to bridges, but used to join individual hosts together
-		- ==TODO look at the self-learning stuff==
 		- Advantages over hubs and repeaters:
 			- Only forward frames as necessary
 			- Wider geographic span
@@ -268,7 +289,7 @@ Problem solving questions on:
 - Network layer:
 	- Routers
 
-### [Wireless Access Networks](Wireless%20Access%20Networks.md), [WiFi](Wireless/Wi-Fi/WiFi.md) protocol
+### [Wireless Access Networks](Wireless/Wireless%20Access%20Networks.md), [WiFi](Wireless/Wi-Fi/WiFi.md) protocol
 
 - BSS: Basic Service Set
 
@@ -281,6 +302,8 @@ Problem solving questions on:
 ## Application layer protocols
 
 ### Architecture
+
+==TODO ???==
 
 ### [DNS](DNS/DNS.md)
 
