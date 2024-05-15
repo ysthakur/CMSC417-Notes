@@ -24,6 +24,6 @@ Properties of RED:
 	- How early to start dropping packets?
 	- What slope for increase in drop probability?
 	- What time scale for averaging queue length?
-- Has to drop packet to give feedback, unlike [ECN](#explicit-congestion-notification-ecn)
+- Has to drop packet to give feedback, unlike [ECN](TCP/Queue%20Management/ECN.md)
 - RED has mixed adoption in practice
 	- If parameters not set right, RED doesn't help

@@ -56,8 +56,6 @@ tags:
 - Each node separately gets an idea of the entire network's topology to calculate the best path
 - Makes routing loops much less likely than DV routing
 
-==todo take notes on count-to-infinity and split horizon and poison reverse (on exam 1, q2.2)==
-
 ### Count-to-infinity
 
 Problem:
@@ -231,8 +229,6 @@ Sliding window:
 - TCP detects congestion through packet loss
 	- And packet loss is detected using timeouts or 3 duplicate ACKs
 
-==TODO check out the congestion window graph in midterm 2 (question 5)==
-
 **AIMD protocol** (Section 6.3.1)
 
 **Drop-tail FIFO queue** (Section 6.2.1)
@@ -249,8 +245,6 @@ Sliding window:
 
 **[TCP Vulnerabilities](TCP/TCP%20Vulnerabilities.md)** (Mentioned research paper and class slides)
 
-==TODO lower priority==
-
 Problem solving questions on:
 1. 3-way handshake for TCP
 2. Calculating header fields for TCP segments/packets and ACKs
@@ -265,8 +259,6 @@ Problem solving questions on:
 ### Medium access protocols, [CSMA](OSI%20layers/Link%20Layer/CSMA.md)
 
 ### [Ethernet](Ethernet/Ethernet.md): Architecture, medium access ([CSMA/CD](OSI%20layers/Link%20Layer/CSMA.md))
-
-==TODO learn, but not as important as rest==
 
 ### Repeater, hubs, [Switches](OSI%20layers/Link%20Layer/Switches.md), [Bridges](OSI%20layers/Link%20Layer/Bridges.md), Routers
 
