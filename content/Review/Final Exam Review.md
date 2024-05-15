@@ -57,6 +57,12 @@ tags:
 
 ### Fragmentation and reassembly
 
+- Links have a max packet length they can handle (MTU = Max Transmission Unit)
+- So, need to fragment packets
+- Packet identifier tells you which packet each fragment belonged to
+- Fragment offset field tells you where in the packet each fragment was
+- MF (More Fragments) flag tells you whether the fragment is the last one
+
 ### [IP Addresses](IP/IP%20Addresses.md)
 
 ### IP datagram forwarding
