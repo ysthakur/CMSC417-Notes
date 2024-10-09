@@ -27,24 +27,24 @@ Example of layered network system:
 
 ### Presentation layer
 
-![[Presentation Layer]]
+![[Presentation layer]]
 
 ### Session layer
 
-![[Session Layer]]
+![[Session layer]]
 
 ### Transport layer
 
-![[Transport Layer]]
+![[OSI layers/Transport layer]]
 
 ### Network layer
 
-![[Network Layer]]
+![[Network layer]]
 
 ### Link layer
 
-![[Link Layer]]
+![[Link layer]]
 
 ### Physical layer
 
-![[Physical Layer]]
+![[OSI layers/Physical layer]]

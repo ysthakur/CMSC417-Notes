@@ -44,9 +44,11 @@ Push resources rather than pull them
 
 ### QUIC
 
-- Eliminates first RTT
+Purpose: Eliminate first RTT
 - Client initiates QUIC connection and immediately requests file
 - Server sends back file instead of shaking hands
+- Uses UDP (ports 80/443)
+- Basically HTTP 3.0
 
 ![](HTTP/http-quic.png)
 

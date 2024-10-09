@@ -47,7 +47,7 @@ Also known as mux/demux
 > [!note]
 > IP datagrams with different source IP addresses and/or source port numbers are still directed to the same socket
 
-#### Connection-orented mux/demux ([TCP](TCP/TCP.md))
+#### Connection-oriented mux/demux ([TCP](TCP/TCP.md))
 
 - TCP socket identified by 4-tuple
 	- Source IP address
@@ -65,10 +65,10 @@ Use case: Threaded web server
 ## Abstraction of Services
 
 IP protocol stack: key abstractions
-- Application layer: Applications
-- Transport layer: Streams of data and messages
-- Network layer: Best-effort global packet delivery
-- Link layer: Best-effort local packet delivery
+- [Application layer](OSI%20layers/Application%20layer.md): Applications
+- [Transport layer](OSI%20layers/Transport%20layer.md): Streams of data and messages
+- [Network layer](OSI%20layers/Network%20layer/Network%20layer.md): Best-effort global packet delivery
+- [Link layer](OSI%20layers/Link%20layer/Link%20layer.md): Best-effort local packet delivery
 
 So transport layer is where we need to go from **best-effort** to **reliable**
 
