@@ -2,7 +2,7 @@
 tags:
   - protocol
 ---
-Transmission Control Protocol (TCP) is a [transport layer](OSI%20layers/Transport%20Layer.md) protocol
+Transmission Control Protocol (TCP) is a [transport layer](OSI%20layers/Transport%20layer.md) protocol
 
 Maintains illusion that both hosts are using the same buffer
 - Host A writes to its segment, Host B reads from its segment

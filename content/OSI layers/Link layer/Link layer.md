@@ -16,7 +16,7 @@ tags:
 ## Link Layer Responsibilities
 
 - Single-hop addressing (e.g. Ethernet addresses)
-- Media access control: [Multi-Access Protocol](OSI%20layers/Link%20Layer/Multi-Access%20Protocol.md)
+- Media access control: [Multi-Access Protocol](OSI%20layers/Link%20layer/Multi-Access%20Protocol.md)
 	- Link-layer congestion control
 	- Collision detection/collision avoidance
 - Single-hop acknowledgments

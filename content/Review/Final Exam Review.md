@@ -13,13 +13,13 @@ tags:
 ### Network architecture, abstractions, and protocol stacks/layers
 
 - [OSI Architecture](OSI%20layers/OSI%20Architecture.md) layers:
-	- [Application Layer](OSI%20layers/Application%20Layer.md) (HTTP, SMTP)
-	- [Transport Layer](OSI%20layers/Transport%20Layer.md) (TCP, UDP)
-	- [Network Layer](OSI%20layers/Network%20Layer/Network%20Layer.md) (IP)
-	- [Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md) (Ethernet, WiFi)
-	- [Physical Layer](OSI%20layers/Physical%20Layer.md) (raw bits on the wire)
+	- [Application Layer](OSI%20layers/Application%20layer.md) (HTTP, SMTP)
+	- [Transport Layer](OSI%20layers/Transport%20layer.md) (TCP, UDP)
+	- [Network Layer](OSI%20layers/Network%20layer/Network%20layer.md) (IP)
+	- [Link Layer](OSI%20layers/Link%20layer/Link%20layer.md) (Ethernet, WiFi)
+	- [Physical Layer](OSI%20layers/Physical%20layer.md) (raw bits on the wire)
 
-### Resource sharing, [Circuit switching](OSI%20layers/Link%20Layer/Circuit%20switching.md), and [Packet switching](OSI%20layers/Link%20Layer/Packet%20switching.md)
+### Resource sharing, [Circuit switching](OSI%20layers/Link%20layer/Circuit%20switching.md), and [Packet switching](OSI%20layers/Link%20layer/Packet%20switching.md)
 
 - Circuit switching has a dedicated channel for each connection
 - Circuit switching is better for real-time applications
@@ -43,12 +43,12 @@ tags:
 
 ### Network as a graph
 
-### [Distance Vector Routing](OSI%20layers/Network%20Layer/Routing/Distance%20Vector%20Routing.md)
+### [Distance Vector Routing](OSI%20layers/Network%20layer/Routing/Distance%20Vector%20Routing.md)
 
 - Each node has a table of cost to reach every other node, as well as next hop to get there
 - Uses Bellman-Ford algorithm to find shortest path
 
-### [Link State Routing](OSI%20layers/Network%20Layer/Routing/Link%20State%20Routing.md)
+### [Link State Routing](OSI%20layers/Network%20layer/Routing/Link%20State%20Routing.md)
 
 - Each node sends Link State Packets (LSPs)
 	- Packet contains information about the node's neighbor
@@ -111,7 +111,7 @@ Expect problem-solving questions
 ### [ARP](../ARP.md) (Section 3.2.6)
 
 - Address Resolution Protocol
-- Each node creates an ARP table mapping [IP Address](IP/IP%20Addresses.md) to [MAC Address](OSI%20layers/Link%20Layer/MAC%20Address.md)
+- Each node creates an ARP table mapping [IP Address](IP/IP%20Addresses.md) to [MAC Address](OSI%20layers/Link%20layer/MAC%20Address.md)
 - Entries time out after a while
 - Nodes create their own ARP tables without intervention from an administrator
 
@@ -155,7 +155,7 @@ Main differences from IPv4:
 3. IP fragmentation and reassembly
 4. Routing protocols
 
-## [Transport Layer](OSI%20layers/Transport%20Layer.md) multiplexing and demultiplexing
+## [Transport Layer](OSI%20layers/Transport%20layer.md) multiplexing and demultiplexing
 ## [UDP](UDP.md)
 
 - Connectionless
@@ -256,11 +256,11 @@ Problem solving questions on:
 
 ### Link layer address, [ARP](ARP.md)
 
-### Medium access protocols, [CSMA](OSI%20layers/Link%20Layer/CSMA.md)
+### Medium access protocols, [CSMA](OSI%20layers/Link%20layer/CSMA.md)
 
-### [Ethernet](Ethernet/Ethernet.md): Architecture, medium access ([CSMA/CD](OSI%20layers/Link%20Layer/CSMA.md))
+### [Ethernet](Ethernet/Ethernet.md): Architecture, medium access ([CSMA/CD](OSI%20layers/Link%20layer/CSMA.md))
 
-### Repeater, hubs, [Switches](OSI%20layers/Link%20Layer/Switches.md), [Bridges](OSI%20layers/Link%20Layer/Bridges.md), Routers
+### Repeater, hubs, [Switches](OSI%20layers/Link%20layer/Switches.md), [Bridges](OSI%20layers/Link%20layer/Bridges.md), Routers
 
 - Physical layer:
 	- Repeaters:
@@ -271,8 +271,8 @@ Problem solving questions on:
 		- Joins multiple input lines electrically
 	- Problem: Cannot join segments using different technologies (solved by switches at link layer)
 - Link layer:
-	- [Bridges](OSI%20layers/Link%20Layer/Bridges.md): used to join LANs together
-	- [Switches](OSI%20layers/Link%20Layer/Switches.md):
+	- [Bridges](OSI%20layers/Link%20layer/Bridges.md): used to join LANs together
+	- [Switches](OSI%20layers/Link%20layer/Switches.md):
 		- Similar to bridges, but used to join individual hosts together
 		- Advantages over hubs and repeaters:
 			- Only forward frames as necessary

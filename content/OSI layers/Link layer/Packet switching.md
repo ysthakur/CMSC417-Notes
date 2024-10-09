@@ -5,7 +5,7 @@
 	- Can do round-robin scheduling
 
 **Store and forward**: Entire packet must arrive at router (stored in internal memory) before it can be transmitted on next link
-- [Circuit switching](OSI%20layers/Link%20Layer/Circuit%20switching.md) doesn't do this, it just directly forwards bits
+- [Circuit switching](OSI%20layers/Link%20layer/Circuit%20switching.md) doesn't do this, it just directly forwards bits
 
-However, introduces [delays](Delay.md) that weren't present in [circuit switching](OSI%20layers/Link%20Layer/Circuit%20switching.md)
+However, introduces [delays](Delay.md) that weren't present in [circuit switching](OSI%20layers/Link%20layer/Circuit%20switching.md)
 

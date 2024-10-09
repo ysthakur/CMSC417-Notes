@@ -6,7 +6,7 @@ tags:
 - e.g. [TCP](TCP/TCP.md), [UDP](UDP)
 - Unit of data exchanged in this layer is called a **message**
 
-The [Session Layer](OSI%20layers/Session%20Layer.md) and [Presentation Layer](OSI%20layers/Presentation%20Layer.md) can be considered part of this layer
+The [Session Layer](OSI%20layers/Session%20layer.md) and [Presentation Layer](OSI%20layers/Presentation%20layer.md) can be considered part of this layer
 
 Two perspectives:
 1. Abstraction of clients

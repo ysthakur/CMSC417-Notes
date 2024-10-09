@@ -5,7 +5,7 @@ aliases:
   - User Datagram Protocol
 ---
 
-User Datagram Protocol (UDP) is a [transport layer](OSI%20layers/Transport%20Layer.md) protocol
+User Datagram Protocol (UDP) is a [transport layer](OSI%20layers/Transport%20layer.md) protocol
 - Bare minimum transport protocol
 - "Best effort" service, UDP segments may be lost or delivered out of order
 - Connectionless:

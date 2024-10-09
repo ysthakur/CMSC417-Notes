@@ -2,7 +2,7 @@
 tags:
   - protocol
 ---
-A [Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md) protocol
+A [Link Layer](OSI%20layers/Link%20layer/Link%20layer.md) protocol
 
 ## Modes
 

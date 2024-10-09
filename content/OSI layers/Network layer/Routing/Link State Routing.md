@@ -1,4 +1,4 @@
-Less likely to have loops than [Distance Vector Routing](OSI%20layers/Network%20Layer/Routing/Distance%20Vector%20Routing.md) (but loops still possible)
+Less likely to have loops than [Distance Vector Routing](OSI%20layers/Network%20layer/Routing/Distance%20Vector%20Routing.md) (but loops still possible)
 
 Strategy:
 - Send to all nodes (not just neighbors) information about neighbors (not connection to all nodes)
@@ -14,7 +14,7 @@ Link State Packet (LSP) contains:
 	- Also uses hop count (but doesn't replace time-to-live, that's crucial for deleting outdated information)
 	- Currently, IP uses 64 hops as default value (==for what? hops? seconds?==)
 
-One link state routing protocol (implementation?) is [Open Shortest Path First (OSPF)](OSI%20layers/Network%20Layer/Routing/OSPF.md)
+One link state routing protocol (implementation?) is [Open Shortest Path First (OSPF)](OSI%20layers/Network%20layer/Routing/OSPF.md)
 
 ## Reliable flooding
 
@@ -46,7 +46,7 @@ Goals:
 - When you get a new LSP, flood before adding to database and processing
 - This is because you want to make sure the other nodes get the LSP as soon as possible
 	- Processing takes time
-- For shortest path routing, in practice, each switch computes its routing table directly from the LSPs it has collected using a realization of Dijkstra's algorithm called the [forward search algorithm](OSI%20layers/Network%20Layer/Routing/Forward%20search%20algorithm.md)
+- For shortest path routing, in practice, each switch computes its routing table directly from the LSPs it has collected using a realization of Dijkstra's algorithm called the [forward search algorithm](OSI%20layers/Network%20layer/Routing/Forward%20search%20algorithm.md)
 
 
 ![LSP processing flowchart](img/link-state-routing-flowchart.png)

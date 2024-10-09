@@ -5,13 +5,13 @@ tags:
   - protocol
 ---
 Enterprise access networks (Ethernet):
-- A [Link Layer](OSI%20layers/Link%20Layer/Link%20Layer.md) protocol
+- A [Link Layer](OSI%20layers/Link%20layer/Link%20layer.md) protocol
 - Typically used in companies, universities, etc.
 - 10 Mbps, 100Mbps, 1Gbps, 10Gbps transmission rates
 - Today, end systems typically connect into Ethernet switch
 - Ethernet is **connectionless** and **unreliable**
 
-Uses [CSMA/CD](OSI%20layers/Link%20Layer/CSMA.md):
+Uses [CSMA/CD](OSI%20layers/Link%20layer/CSMA.md):
 - Carrier Sense: Wait for link to be idle
 	- Channel idle: start transmitting
 	- Channel busy: wait until idle
@@ -27,7 +27,7 @@ Uses [CSMA/CD](OSI%20layers/Link%20Layer/CSMA.md):
 
 Star topology helps avoid collisions
 - With a hub at the center, can have collisions
-- But not with a [Switch](OSI%20layers/Link%20Layer/Switches.md) at the center
+- But not with a [Switch](OSI%20layers/Link%20layer/Switches.md) at the center
 	- Separates the collision domain
 	- Switch knows about the link layer protocol, smart enough not to simultaneously repeat two signals
 	- Buffers simultaneous packets sent to a host

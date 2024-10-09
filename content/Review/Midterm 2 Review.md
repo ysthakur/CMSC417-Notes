@@ -44,7 +44,7 @@ Main differences from IPv4:
 - No header checksum (left for application layer)
 - No fragmenting - if packet exceeds MTU, it's dropped
 
-## [Transport Layer](OSI%20layers/Transport%20Layer.md) protocols (Chapters 5 and 6)
+## [Transport Layer](OSI%20layers/Transport%20layer.md) protocols (Chapters 5 and 6)
 
 ### Transport layer mux/demux (Section 5.1 and class slides)
 

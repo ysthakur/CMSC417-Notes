@@ -79,7 +79,7 @@ If the link cost *increases*, that can be problematic:
 
 Some solutions to count-to-infinity problem:
 1. Have a small number for infinity, so at least it stops at some point
-	- In the [Routing Information Protocol](OSI%20layers/Network%20Layer/Routing/Routing%20Information%20Protocol.md), the max number of hops is typically 15 or 16
+	- In the [Routing Information Protocol](OSI%20layers/Network%20layer/Routing/Routing%20Information%20Protocol.md), the max number of hops is typically 15 or 16
 	- If a network is more than 15 hops away, it is considered unreachable
 	- This may work for smaller networks, but not larger networks
 2. Split horizon

@@ -15,6 +15,6 @@ Mobile Switching Center (MSC):
 
 ## The first hop
 
-Two techniques for sharing mobile-to-BS radio spectrum (see [Multi-Access Protocol](OSI%20layers/Link%20Layer/Multi-Access%20Protocol.md)):
+Two techniques for sharing mobile-to-BS radio spectrum (see [Multi-Access Protocol](OSI%20layers/Link%20layer/Multi-Access%20Protocol.md)):
 1. Combined FDMA/TDMA: Divide spectrum into frequency channels, divide each channel into time slots
 2. CDMA: Code division multiple access

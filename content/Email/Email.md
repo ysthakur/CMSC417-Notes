@@ -1,4 +1,4 @@
-In the [Application Layer](OSI%20layers/Application%20Layer.md)
+In the [Application Layer](OSI%20layers/Application%20layer.md)
 
 Three major components:
 - User agents, a.k.a. mail readers

@@ -6,7 +6,7 @@ tags:
 ---
 Domain Name System (DNS)
 - A distributed, hierarchical database
-- Works at the [Application Layer](OSI%20layers/Application%20Layer.md)
+- Works at the [Application Layer](OSI%20layers/Application%20layer.md)
 - Maps URLs and email address entered by humans to the IP addresses that are used at lower [OSI layers](OSI%20layers/OSI%20Architecture.md)
 
 Not centralized because it wouldn't scale:

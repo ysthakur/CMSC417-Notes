@@ -10,4 +10,4 @@ aliases:
 - If other node sees CTS, will idle for specified period
 - If other node sees RTS but not CTS, free to send
 
-![](OSI%20layers/Link%20Layer/virtual-carrier-sensing.png)
+![](OSI%20layers/Link%20layer/virtual-carrier-sensing.png)

@@ -1,7 +1,7 @@
 Problem with [WiFi](Wireless/Wi-Fi/WiFi.md)
 - B is sending to A, C wants to send to D
-- As C receives B's packets, carrier sense (see [CSMA](OSI%20layers/Link%20Layer/CSMA.md)) would prevent it from sending to D, even though wouldn't interfere
-- [RTS/CTS](OSI%20layers/Link%20Layer/Virtual%20Carrier%20Sensing.md) would help
+- As C receives B's packets, carrier sense (see [CSMA](OSI%20layers/Link%20layer/CSMA.md)) would prevent it from sending to D, even though wouldn't interfere
+- [RTS/CTS](OSI%20layers/Link%20layer/Virtual%20Carrier%20Sensing.md) would help
 	- C hears RTS from B, but not CTS from A
 	- C knows its transmission wouldn't interfere with A
 	- C is safe to transmit to D

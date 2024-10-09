@@ -7,7 +7,7 @@ tags:
 Hyper-Text Transfer Protocol (HTTP)
 - Stateless: Server maintains no information about past client requests
 - Uses [TCP](TCP/TCP.md) (client connects to port 80 on the server)
-- At [Application Layer](OSI%20layers/Application%20Layer.md)
+- At [Application Layer](OSI%20layers/Application%20layer.md)
 
 Review of web stuff:
 - Web pages consist of objects

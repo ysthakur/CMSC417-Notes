@@ -14,11 +14,11 @@ Types:
 1. Time Division Multiple Access
 2. Frequency Division Multiple Access
 3. Code Division Multiple Access
-4. [Carrier Sense Multiple Access](OSI%20layers/Link%20Layer/CSMA.md)
+4. [Carrier Sense Multiple Access](OSI%20layers/Link%20layer/CSMA.md)
 
-![Types of Multi-Access Protocols](OSI%20layers/Link%20Layer/multi-access-protocols.png)
+![Types of Multi-Access Protocols](OSI%20layers/Link%20layer/multi-access-protocols.png)
 
-![CSMA](OSI%20layers/Link%20Layer/CSMA.md)
+![CSMA](OSI%20layers/Link%20layer/CSMA.md)
 
 ## Comparison
 

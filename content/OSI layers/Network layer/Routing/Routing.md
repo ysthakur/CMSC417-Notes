@@ -25,8 +25,8 @@ But such a static approach has shortcomings:
 
 Solution: use a distributed and dynamic protocol
 Two main classes of protocols:
-1. [Distance Vector Routing](OSI%20layers/Network%20Layer/Routing/Distance%20Vector%20Routing.md)
-2. [Link State Routing](OSI%20layers/Network%20Layer/Routing/Link%20State%20Routing.md)
+1. [Distance Vector Routing](OSI%20layers/Network%20layer/Routing/Distance%20Vector%20Routing.md)
+2. [Link State Routing](OSI%20layers/Network%20layer/Routing/Link%20State%20Routing.md)
 
 ### Link State Routing vs Distance Vector Routing
 
